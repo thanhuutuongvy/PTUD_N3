@@ -1,0 +1,197 @@
+@media (max-width:991px){
+    html{
+        font-size: 90%;
+    }
+    .header .logo img {
+        width:200px;
+    }
+    .header{
+        padding:1rem 2rem;
+
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    
+    .header .icon #menu{
+        display:inline-block;
+    }
+    .header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100% ,0% 100%);
+
+    }
+
+    .header .navbar a{
+        display:block;
+        padding:20px;
+        margin:10px;
+        font-size: 15px;
+        background: #C4CCC6;
+    }
+
+
+    footer .container{
+        display:block;
+        text-align: center;
+    }
+
+    .trangchu .trangchu-slider .slide{
+        padding-top:50px;
+    }
+    .trangchu .trangchu-slider .noidung{
+        padding: 5px;
+        text-align: center;
+      }
+      .trangchu .trangchu-slider .noidung span{
+        font-size: 100%;
+        
+      }
+      .trangchu .trangchu-slider .noidung h3{
+        font-size: 100%;
+        padding-top: 5px;
+      }
+      .trangchu .trangchu-slider .noidung p{
+        font-size: 100%;
+        padding-top: 10px;
+      }
+
+
+
+    .vechungtoi .chungtoi{
+        display:block;
+        text-align: center;
+      }
+    .vechungtoi .chungtoi img{
+       width:200px;
+       height:200px;
+       border-radius:50%;
+    }
+    
+    .uudiem .uudiem-contain{
+        display:block;
+    }
+
+
+    .chinhsach{
+        padding:0;
+    }
+    .chinhsach .chinhsachnho {
+        position: relative;
+        justify-content: center;
+    }
+      
+    .chinhsachnho img {
+        opacity: 0.4;
+    }
+    .chinhsachnho .noidung {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .chinhsach .chinhsachnho .noidung h3 {
+        padding-bottom: 10px;
+    }
+
+
+
+
+      
+    .workshop{
+        padding: 0px;
+    }
+    .workshop .workshop-dau{
+        position:relative;
+        justify-content: center;
+    }
+    .workshop .workshop-dau img{
+        opacity: 0.4;
+    }
+    .workshop .workshop-dau .noidung{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .workshop .workshop-dau .noidung h3{
+        padding: 30px;
+    }
+
+    .gioithieu .gth-ws{
+        display:block;
+        text-align: center;
+    }
+    .gth-ws .khonggian{
+        display:flex;
+        justify-content: center;
+    }
+    .gth-ws .khonggian img{
+        width:200px;
+        height:180px;
+        border-radius: 50%;
+      }
+
+    .trainghiem .wrapper {
+        display:block;
+        text-align: center;   
+    }
+    .trainghiem .binhluan{
+        padding:20px;
+        width:100%;
+        background-color: #C4CCC6;
+    }
+    .lichhoatdong .hoatdong{
+        display:block;
+    }
+    .lichhoatdong .hoatdong .noidung{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .btn{/*định dạng nút*/
+        color:#ffffff;
+        font-size:80%;
+        padding:5px;
+        font-style: italic;
+        background: #54766a00;
+        line-height: 30px;
+      }
+    .header .logo img {
+        width:130px;
+    }
+    .header{
+        width:100%;
+        height:50px;
+    }
+    .trangchu .trangchu-slider .slide{
+        padding-top:50px;
+    }
+    .trangchu .trangchu-slider .noidung{
+        padding: 5px;
+        text-align: center;
+      }
+      .trangchu .trangchu-slider .noidung span{
+        font-size: 95%;
+        
+      }
+      .trangchu .trangchu-slider .noidung h3{
+        font-size: 95%;
+        padding-top: 5px;
+      }
+      .trangchu .trangchu-slider .noidung p{
+        font-size: 90%;
+        padding-top: 10px;
+      }
+      
+      
+
+  }

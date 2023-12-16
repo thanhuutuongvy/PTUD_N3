@@ -38,15 +38,20 @@
 </div>
 
 <div id="main-content">
-    <div id="left-sidebar">
+  <!--sử dụng id left - right sidebar để dễ định vị rõ trên CSS-->
+    <div id="left-sidebar"> 
+      <!--Các button đặt trong thẻ a để tạo liên kết và chuyển hướng trang-->
       <a href="./Thong tin khach hang.html"><button class="button">Thông tin tài khoản</button></a>
       <a href="./San pham da mua.html"><button class="button">Sản phẩm đã mua</button></a>
       <a href="./san pham yeu thich.html"><button class="button">Sản phẩm yêu thích</button></a>
       <a href="./donhang.html"><button class="button">Đơn hàng đang xử lý</button></a>
-      <a href="./"><button class="button">Đăng xuất</button>
+      <a href="./trangchu.html"><button class="button">Đăng xuất</button>
+      <!--href đặt các trang sẽ chuyển hướng đến khi bấm vào button-->
     </div>
     <div id="right-content">
-        <div>
+      <!-- Dùng Table để phân từng line rõ ràng như trên trang -->
+      <!--thẻ tr để phân hàng-->
+      <div>
             <table>
                 <tr>
                     <td>
@@ -65,9 +70,10 @@
                 <tr>
                     <td>
                         <table id="customers">
+                          <!--colspan của thẻ <th> (table header) được sử dụng để chỉ định số lượng cột mà một ô tiêu đề nên trải qua ngang-->
                             <tr>
                               <th colspan="2">Sản phẩm</th>
-                              <th>Giá</th>
+                               <th>Giá</th>
                               <th>Số lượng</th>
                               <th>Tổng cộng</th>
                             </tr>

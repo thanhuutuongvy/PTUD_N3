@@ -646,11 +646,13 @@ padding-top:10px;
   width:50%;
   line-height: 20px;
 }
-.lichhoatdong .hoatdong .lich table.thoigian,th, td{
+.lichhoatdong .hoatdong .lich table, 
+.lichhoatdong .hoatdong .lich th, 
+.lichhoatdong .hoatdong .lich td{
   border:2px solid rgb(101, 118, 104);
-  padding:8px;
+  padding:10px;
 }
-.lichhoatdong .hoatdong .lich table.thoigian{
+.lichhoatdong .hoatdong .lich table{
   border-collapse:collapse;
   margin: 0 auto;
 }

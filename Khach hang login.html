@@ -136,10 +136,17 @@
             var password = document.getElementById('password').value;
 
             // Here you would typically check the credentials against a database
-            // For this example, we'll just check if they are non-empty
-            if(username == 'admin' && password == 'admin') {
+            // tài khoản khách hàng
+            if(username == 'khachhang' && password == 'khachhang123') {
                 // Redirect to a new page
                 window.location.href = 'thong tin khach hang.html';
+            } else {
+                alert("Please enter both username and password");
+            }
+            // tài khoản admin
+             if(username == 'admin' && password == 'admin123') {
+                // Redirect to a new page
+                window.location.href = 'dbadmin1_1.html';
             } else {
                 alert("Please enter both username and password");
             }

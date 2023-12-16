@@ -11,97 +11,81 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <div class="admin-container">
-        <div class="login-container" id="login-container">
-            <h2>Đăng nhập</h2>
-            <label for="username">Tên đăng nhập:</label>
-            <input type="text" id="username" class="input-container">
-
-            <label for="password">Mật khẩu:</label>
-            <input type="password" id="password" class="input-container">
-
-            <button onclick="login()" class="btn-container">Đăng nhập</button>
+<!--HEADER-->
+     <header class="header">
+        <div class="logo">
+            <img src="./hinhanh/logo.png" alt="">
         </div>
+        <nav class="navbar">
+            <a class="active" href="./trangchu.html">Trang chủ</a>
+            <a href="./cartegory.html">Cửa hàng</a>
+            <a href="./workshop.html">Workshop</a>
+            <a href="./Về chúng tôi.html">Về Y.Ceramic</a>
+            <a href="./chinhsach.html">Chính sách</a>
+        </nav>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" id="timkiem"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>            
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+        <form action="" class="search-form">
+          <input type="search" id="search-box" placeholder="Nhập để tìm kiếm...">
+          <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+        </form>
 
-        <div id="adminPanel" style="display: none;">
-            <h2>Quản lý Bán hàng</h2>
-
-            <h3>Thêm Sản phẩm</h3>
-            <label for="productName">Tên Sản phẩm:</label>
-            <input type="text" id="productName" class="input-container">
-
-            <label for="productCode">Mã Sản phẩm:</label>
-            <input type="text" id="productCode" class="input-container">
-
-            <label for="productQuantity">Số lượng:</label>
-            <input type="number" id="productQuantity" class="input-container">
-
-            <label for="productPrice">Giá:</label>
-            <input type="text" id="productPrice">
-
-            <label for="productImageInput">Hình ảnh Sản phẩm:</label>
-            <input type="file" id="productImageInput" accept="image/*" class="input-container">
-
-            <button onclick="addProduct()" class="btn-container">Thêm Sản phẩm</button>
-
-            <h3>Danh sách Sản phẩm</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Tên Sản phẩm</th>
-                        <th>Mã Sản phẩm</th>
-                        <th>Số lượng</th>
-                        <th>Giá</th>
-                        <th>Chỉnh sửa</th>
-                    </tr>
-                </thead>
-                <tbody id="productTableBody"></tbody>
-            </table>
-
-            <h3>Quản lý Khuyến mãi</h3>
-            <label for="promotionName">Tên Khuyến mãi:</label>
-            <input type="text" id="promotionName" class="input-container">
-
-            <label for="promotionCode">Mã Khuyến mãi:</label>
-            <input type="text" id="promotionCode" class="input-container">
-
-            <label for="promotionDiscount">Giảm giá (%):</label>
-            <input type="number" id="promotionDiscount" class="input-container">
-
-            <label for="promotionStartDate">Ngày bắt đầu:</label>
-            <input type="date" id="promotionStartDate" class="input-container">
-
-            <label for="promotionEndDate">Ngày kết thúc:</label>
-            <input type="date" id="promotionEndDate" class="input-container">
-
-            <button onclick="addPromotion()" class="btn-container">Thêm Khuyến mãi</button>
-
-            <h3>Danh sách Khuyến mãi</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Tên Khuyến mãi</th>
-                        <th>Mã khuyến mãi</th>
-                        <th>Giảm giá (%)</th>
-                        <th>Ngày bắt đầu</th>
-                        <th>Ngày kết thúc</th>
-                        </tr>
-                    </thead>
-                    <tbody id="promotionTableBody"></tbody>
-                </table>
-        
-                <h3>Thống kê</h3>
-                <div class="popup" onmouseover="displayStatisticsPopup()" onmouseout="hideStatisticsPopup()">
-                    <button>Hiển thị Thống kê</button>
-                    <div class="popup-content">
-                        <!-- Nội dung thống kê -->
-                        <p>Sản phẩm bán chạy</p>
-                        <p>Sản phẩm giảm giá</p>
-                        <p>Sản phẩm đang chờ giao hàng</p>
-                    </div>
-                </div>
-            </div>
+    </header>
+    <div class="admin-container">
+        FOOTER-->
+     <footer>
+      <div class="container">
+        <div class="chinhanh">
+          <h3>Chi nhánh</h3>
+            <ul>
+              <li>Chi nhánh 1: 279 Nguyễn Tri Phương, phường 5, quận 10, TP. Hồ Chí Minh
+                <br> Điện thoại: (+84)987654321
+              </li><br>
+              <li>Chi nhánh 2: 59C Nguyễn Đình Chiểu, phường 6, quận 3, TP. Hồ Chí Minh
+                <br> Điện thoại: (+84)876954321
+              </li>
+            </ul>
+        </div>
+        <div class="thongtin">
+          <h3>Thông tin</h3>
+            <ul>
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="#">Cửa hàng</a></li>
+              <li><a href="./workshop.html">Workshop</a></li>
+              <li><a href="#">Về Y.Ceramic</a></li>
+              <li><a href="./chinhsach.html">Chính sách</a></li>
+            </ul>      
+        </div>
+        <div class="lienhe">
+          <h3>Liên hệ</h3>
+            <ul>
+              <li>Hotline:(+84)987654321</li>
+              <li>Email: theyceramic@gmail.com</li>
+            </ul>
+          </div>
+        <div class="social">
+          <h3>Theo dõi Y.Ceramic</h3>
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i>The Y.Ceramic</a></li>
+              <li><a href="#"><i class="fa-brands fa-tiktok"></i>Gốm nhà Y</a></li> 
+              <li><a href="#"><i class="fa-brands fa-instagram"></i>they.creamic</a></li>
+          </ul>
+      </div>    
+      <div class="dangky">
+          <form>
+            <h3>Đăng ký</h3>
+            <input type="email" name="email" placeholder="Nhập email" value="">
+            <button type="submit"><i class="fa-regular fa-paper-plane"></i></i></button>
+          <p> Đăng ký để nhận thông báo sớm nhất từ Y.Ceramic</p>
+      </div>
+      <div class="copyright">
+          <p>Copyright &copy; 2023 - Bản quyền thuộc về Y.Ceramic </p>
+      </div>  
+  </footer>
         </body>
         </html>

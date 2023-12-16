@@ -33,7 +33,9 @@ section{
 
 
 }
-
+.khoangcach{
+  padding-top:100px;
+}
 
 /*Định dạng header*/
 .header{
@@ -53,7 +55,7 @@ section{
 }
 .header .navbar a{
     color:#444444;
-    padding:15px;
+    padding:20px;
     font-weight:550;
 }
 .header .navbar a.active,
@@ -259,7 +261,22 @@ padding-top:10px;
 
 }
 
-
+/*Sản phẩm bán chạy*/
+.sanphambanchay{
+  background-color: #b7c2b469;
+}
+.sanphambanchay h2{
+  color:#337153;
+  padding-bottom:10px;
+  text-align: center;
+}
+.sanphambanchay .spbc{
+  display:flex;
+  flex-wrap: wrap;/*Xếp chồng các phần tử con thành nhiều hàng khi không đủ không gian ngang để chứa tất cả các phần tử trên cùng một hàng.*/
+  justify-content:space-around;
+  gap:20px;
+  
+}
 
 
 
@@ -1071,6 +1088,7 @@ a {
 }
 
 .product-content-left-big-img:hover {
+
          
               -moz-transform: scale(1.1);
               -webkit-transform: scale(1.1);

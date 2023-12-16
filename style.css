@@ -644,11 +644,11 @@ padding-top:10px;
   width:50%;
   line-height: 20px;
 }
-.lichhoatdong .hoatdong .lich table,th, td{
+.lichhoatdong .hoatdong .lich table.thoigian,th, td{
   border:2px solid rgb(101, 118, 104);
   padding:8px;
 }
-.lichhoatdong .hoatdong .lich table{
+.lichhoatdong .hoatdong .lich table.thoigian{
   border-collapse:collapse;
   margin: 0 auto;
 }

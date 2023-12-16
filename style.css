@@ -1588,7 +1588,7 @@ li.cartegory-left-li  {
   .danhgia-input {
     border: 1px solid #ccc;
     height: 100px;
-    
+    width: 600px;
     
   }
   .danhgia-input {
@@ -1603,26 +1603,19 @@ li.cartegory-left-li  {
     margin-top: 10px;
     padding: 10px;
   }
-  .danhgia-label {
-    background-color: #fff;
-  }
-  .danhgia-label {
-    border: 1px solid #ccc;
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .danhgia-label {
-    padding: 10px;
-  }
+  
   .product-content-right-bottom-content-danhgia button {
     margin-top: 10px;
-    background-color: #2d8730;
+    background-color: #53bf57;
     border: 1px solid #ccc;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
     padding: 10px;
+  }
+  .product-content-right-bottom-content-danhgia button:hover{ background-color: #084e25;
+    width: 150px;
+  
   }
 
   

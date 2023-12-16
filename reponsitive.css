@@ -154,6 +154,14 @@
     .lichhoatdong .hoatdong .noidung{
         width:100%;
     }
+
+    /*Trang tài khoản*/
+    #header_line{
+        padding-top:70px;
+        padding-bottom: 20px;
+       }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -191,7 +199,7 @@
         font-size: 90%;
         padding-top: 10px;
       }
-      
-      
 
+ 
+    
   }

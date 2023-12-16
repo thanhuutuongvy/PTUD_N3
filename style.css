@@ -2114,12 +2114,16 @@ position: absolute;
 
 
 /*Trang tài khoản*/
-body {
-  font-family: Arial, sans-serif;
-  }
-  h3 {
-  color: #555;
-  }
+ #header_line{
+  padding-top:130px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color:rgb(101, 118, 104);
+ }
+ #header_line h3{
+  color:#eef3f1;
+
+ }
   table {
   width: 100%;
   border-collapse: collapse;
@@ -2183,6 +2187,7 @@ body {
   }
   .form-submit:hover {
   background-color: #45a049;
+  color:white;
   }
   .button {
   display: block;
@@ -2198,13 +2203,7 @@ body {
   }
   .button:hover {
   background-color: #45a049;
-  }
-  .logo {
-  text-align: center;
-  flex-grow: 1; /*Cho phần tử mở rộng để lấp đầy không gian còn lại trong container.*/
-  }
-  .logo img {
-  width: 150px;
+  color:white;
   }
   .search {
   order: -1; /*Đặt thứ tự hiển thị của phần tử là đầu tiên trong container.*/

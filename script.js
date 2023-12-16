@@ -1,4 +1,6 @@
 
+
+//------------------------------------THU GỌN MENU ------------------- 
 let menu = document.querySelector('#menu');
 let navbar = document.querySelector('.navbar');
 
@@ -6,13 +8,13 @@ menu.onclick = () =>{
   menu.classList.toggle('fa-times');
   navbar.classList.toggle('active');
 }
-
+//------------------------------------THANH TÌM KIẾM------------------- 
 let searchForm = document.querySelector('.search-form');
 document.querySelector('#timkiem').onclick = () => {
   searchForm.classList.toggle('active');
 };
     
-    
+ //------------------------------------SLIDE TRANG CHỦ -------------------    
     var swiper = new Swiper(".trangchu-slider", {
       spaceBetween: 30,
       centeredSlides: true,
@@ -26,7 +28,7 @@ document.querySelector('#timkiem').onclick = () => {
       },
       loop:true,
     });
-
+//------------------------------------SLIDE ĐÁNH GIÁ Ở TRANG CHỦ ------------------- 
     var swiper = new Swiper(".danhgia-slider", {
         spaceBetween: 20,
         centeredSlides: true,
@@ -75,4 +77,45 @@ document.querySelector('#timkiem').onclick = () => {
         }
       });
 
-     
+//------------------------------------PRODUCT-------------------
+const bigImg = document.querySelector(".product-content-left-big-img img")
+const smallImg = document.querySelectorAll(".product-content-left-small-img img")
+
+smallImg.forEach(function(imgItem,X){
+    imgItem.addEventListener("click", function(){
+        console.log(imgItem)
+         bigImg.src = imgItem.src
+    })
+})
+
+const baoQuan = document.querySelector(".baoquan")
+const chiTiet = document.querySelector(".chitiet")
+if(baoQuan){
+    baoQuan.addEventListener("click",function(){
+        document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "none"    
+        document.querySelector(".product-content-right-bottom-content-baoquan").style.display = "block"
+})
+}
+if(chiTiet){
+    chiTiet.addEventListener("click",function(){
+        document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "block"    
+        document.querySelector(".product-content-right-bottom-content-baoquan").style.display = "none"
+            })
+}
+
+
+const buTton = document.querySelector(".product-content-right-bottom-top")
+if(buTton){
+    buTton.addEventListener("click",function(){
+        document.querySelector(".product-content-right-bottom-content-big").classList.toggle("activeB")
+        })
+}
+
+
+//------------------------------------THANH TOÁN------------------- 
+function showOverlay() {
+  var cacvoucher = document.getElementById('cacvoucher');
+  cacvoucher.style.display = 'flex'; // Hiển thị các voucher
+}
+
+

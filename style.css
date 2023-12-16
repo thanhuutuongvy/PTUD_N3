@@ -1349,7 +1349,7 @@ a {
 
 
 /*Trang Giỏ hàng*/
-  /* CSS cho tiêu đề giỏ hàng */
+ /* CSS cho tiêu đề giỏ hàng */
 .giỏ-hàng .tiêu-đề-giỏ-hàng {
   background-color: #c4ccc6;
   padding: 1px;
@@ -1371,12 +1371,14 @@ a {
   gap: 75px;
 }
 /*định dang cho tiêu đề của bản sản phẩm*/
-.giỏ-hàng .bảng-sản-phẩm th {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tatca .bảng1 .bảng-sản-phẩm th {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #666666;
   font-size: 80%;
   padding: 5%;
+  background-color: #d9d9d9;
+
 }
 /*định dạng cho số tiền tổng*/
 .giỏ-hàng #tổng-cộng {
@@ -1385,19 +1387,22 @@ a {
   font-size: 80%;
   color: #cd5c5c;
 }
+
 /*định dạng cho các nội dung trong ô của bảng sản phẩm*/
-.giỏ-hàng .bảng-sản-phẩm td {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tatca .bảng1 .bảng-sản-phẩm td {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #444444;
   font-size: 80%;
   padding: 5%;
+
+
 }
-.giỏ-hàng .tatca {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tatca {
   display: inline;
 }
 /*định dạng bảng sản phẩm*/
-.giỏ-hàng .bảng-sản-phẩm {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tatca .bảng-sản-phẩm {
   width: 850px;
 }
 /*định dạng tiêu đề của ô tổng cộng*/
@@ -1410,8 +1415,9 @@ a {
 }
 
 /*định dạng bảng cộng giỏ hàng*/
-.giỏ-hàng .cộng-giỏ-hàng {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tonggio .cộng-giỏ-hàng {
   width: 400px;
+ 
 }
 .giỏ-hàng .xoa i {
   cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
@@ -1422,6 +1428,9 @@ a {
   width: 450px;
   height: auto;
   left: 50px; /* Vị trí từ phía trái */
+}
+.giỏ-hàng .cộng-giỏ-hàng th{
+  background-color: #d9d9d9;
 }
 /*định dạng nội dung trong các ô của bảng cộng giỏ hàng*/
 .giỏ-hàng .cộng-giỏ-hàng td {
@@ -1472,17 +1481,13 @@ a {
 }
 
 /*định dạng bảng trong giỏ hàng*/
-.giỏ-hàng table,
-th,
-td {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tatca .bảng1 .bảng-sản-phẩm{
   border-bottom: 1px solid #666666;
   border-top: none; /*loại bỏ viền hàng đầu tiên*/
   border-collapse: collapse; /*kiểu 1 viền*/
 }
-.giỏ-hàng .ô-cộng-giỏ-hàng {
-  position: relative;
-}
-.giỏ-hàng .ô-cộng-giỏ-hàng:before {
+
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tonggio .ô-cộng-giỏ-hàng .ô-cộng-giỏ-hàng:before {
   content: "";
   position: absolute;
   left: 0;
@@ -1491,11 +1496,11 @@ td {
   width: 50%;
   border-left: 1px solid #666666;
 }
-.giỏ-hàng .tonggio .tonggio-thanhtoan {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tonggio .tonggio-thanhtoan {
   border: 1px solid #666666; /* Viền 1px với màu xám nhạt */
   padding: 10px; /* Khoảng cách giữa nội dung và viền */
 }
-.giỏ-hàng .thanhtoan {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .thanhtoan {
   background-color: #337153; /* Màu nền */
   color: #fff; /* Màu chữ */
   padding: 10px 20px; /* Kích thước nút */
@@ -1504,11 +1509,10 @@ td {
   border-radius: 20px; /* Bo tròn góc */
   cursor: pointer; /* Đổi hình con trỏ khi hover */
 }
-.giỏ-hàng .othanhtoan {
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tonggio  .othanhtoan {
   text-align: center;
 }
-.giỏ-hàng .cộng-giỏ-hàng,
-.othanhtoan {
+.giỏ-hàng .cộng-giỏ-hàng, .othanhtoan {
   margin-bottom: 50px; /* Khoảng cách giữa hai div */
 }
 .giỏ-hàng .thanhtoan:hover {
@@ -1622,19 +1626,13 @@ td {
 
 /*Trang Thanh toán */
 /*------------------------------*/
-.trangthanhtoan {
-  overflow: visible;
-}
 .trangthanhtoan .thanhtoan {
-  margin: 0;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
-  padding: 70px;
+ 
 }
-
 .trangthanhtoan .tiêu-đề {
   background-color: #c4ccc6;
   padding: 10px;
@@ -1643,7 +1641,6 @@ td {
   letter-spacing: 3px; /*giãn chữ*/
   text-align: center;
   color: #666666;
-  white-space: nowrap;
   height: 50px;
 }
 
@@ -1653,12 +1650,19 @@ td {
   color: #666666;
   font-size: 13px;
 }
-.trangthanhtoan table td,
-th {
+.trangthanhtoan .bang-vanchuyen td, th {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #666666;
   font-size: 13px;
+  text-align:left;
+}
+.trangthanhtoan .form-phuongthucthanhtoan td, th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #666666;
+  font-size: 13px;
+  text-align: left;
 }
 .trangthanhtoan h3 {
   font-family: Arial, Helvetica, sans-serif;
@@ -1684,7 +1688,7 @@ th {
   background-color: #d9d9d9;
 }
 
-.trangthanhtoan form {
+.trangthanhtoan  form {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #666666;
@@ -1697,11 +1701,6 @@ th {
   color: #cd5c5c;
 }
 
-.trangthanhtoan .thongtinthanhtoan .form-thanhtoan {
-  max-width: 550px;
-  margin: 10px auto;
-  padding: 10px;
-}
 .trangthanhtoan .thongtinthanhtoan .form-thanhtoan label {
   display: block;
   padding: 10px;
@@ -1737,7 +1736,7 @@ th {
 }
 .trangthanhtoan .thongtinthanhtoan .form-thanhtoan .ghichu input {
   width: 100%;
-  height: 150px;
+  height: 150px; /*đặt chiều cao cho ô ghi chú*/
 }
 .trangthanhtoan .thongtinthanhtoan .form-thanhtoan select {
   padding: 8px; /* Tăng chiều cao của ô input */
@@ -1748,69 +1747,93 @@ th {
   background-color: #d9d9d9;
   width: 100%;
 }
+.trangthanhtoan .thongtinthanhtoan{
+  margin:0;
+  position: relative;
+  top: -250px; /* Vị trí từ phía trên */
+  
+}
+
 .trangthanhtoan .vanchuyen-thanhtoan .donhang {
-  width: 500px;
+
   border: 1.5px solid #666666; /* Màu sắc và độ dày của khung */
   padding: 20px; /* Khoảng cách giữa nội dung và khung */
   position: relative;
-  top: 80px; /* Vị trí từ phía trên */
-  width: 550px;
-  height: auto;
+  top: -80px; /* Vị trí từ phía trên */
 }
 
 .trangthanhtoan .phần-đầu-donhang {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 .trangthanhtoan .donhang .tiêu-đề-donhang {
   display: flex;
   justify-content: space-between; /* Phân chia không gian đều giữa các phần tử */
-  align-items: center; /* Canh giữa theo chiều dọc */
+  padding: 20px;
 }
 .trangthanhtoan .donhang .sanpham {
   display: block;
+  padding: 20px;
+ 
 }
 .trangthanhtoan .donhang .sp1 {
   display: flex;
   justify-content: space-between; /* Phân chia không gian đều giữa các phần tử */
-  align-items: center; /* Canh giữa theo chiều dọc */
+
+  margin-top: 15px;
 }
 .trangthanhtoan .donhang .sp2 {
   display: flex;
   justify-content: space-between; /* Phân chia không gian đều giữa các phần tử */
   align-items: center; /* Canh giữa theo chiều dọc */
+  margin-top: 15px;
+  
 }
 .trangthanhtoan .donhang .vanchuyen {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.trangthanhtoan .voucher{
+  margin-top: 15px;
+
 }
 .trangthanhtoan .donhang .loaivanchuyen {
   float: right;
+  margin-top: 15px;
 }
+.trangthanhtoan .donhang .loaivanchuyen input{
+  margin-top: 15px;
+}
+
 .trangthanhtoan .donhang .tamtinh {
   display: flex;
   justify-content: space-between; /* Phân chia không gian đều giữa các phần tử */
   align-items: center; /* Canh giữa theo chiều dọc */
+  margin-top: 15px;
 }
 .trangthanhtoan .donhang .giamgia {
   display: flex;
   justify-content: space-between; /* Phân chia không gian đều giữa các phần tử */
   align-items: center; /* Canh giữa theo chiều dọc */
+  margin-top: 15px;
 }
 .trangthanhtoan .donhang .phivanchuyen {
   display: flex;
   justify-content: space-between; /* Phân chia không gian đều giữa các phần tử */
   align-items: center; /* Canh giữa theo chiều dọc */
+  margin-top: 15px;
 }
 .trangthanhtoan .donhang .tongcong {
   display: flex;
   justify-content: space-between; /* Phân chia không gian đều giữa các phần tử */
   align-items: center; /* Canh giữa theo chiều dọc */
+  margin-top: 15px;
+  margin-bottom:15px;
+}
+.trangthanhtoan .donhang .phuongthucthanhtoan{
+  margin-top: 15px;
 }
 
-.trangthanhtoan #logo-thanhtoan {
-  float: right;
-}
 
 .trangthanhtoan .text-voucher {
   text-align: left;
@@ -1859,23 +1882,13 @@ th {
 .trangthanhtoan .pttt-dathang {
   overflow: auto; /* Đảm bảo phần tử không bị tràn */
 }
-.trangthanhtoan .phuongthucthanhtoan,
-.nut {
+.trangthanhtoan .phuongthucthanhtoan, .nut {
   margin-bottom: 30px; /* Khoảng cách giữa hai div */
 }
-.trangthanhtoan .tiêu-đề,
-.vanchuyen-thanhtoan {
+.trangthanhtoan .tiêu-đề, .vanchuyen-thanhtoan {
   margin-bottom: 50px; /* Khoảng cách giữa hai div */
 }
 /*đặt lại vị trí cho thông tin thanh toán*/
-
-.trangthanhtoan .trangthanhtoan .thongtinthanhtoan {
-  position: relative;
-  top: -200px; /* Vị trí từ phía trên */
-  width: 550px;
-  height: 500px;
-  left: 50px; /* Vị trí từ phía trái */
-}
 .trangthanhtoan .nut {
   display: flex;
   gap: 286px;
@@ -1883,7 +1896,7 @@ th {
 .trangthanhtoan .quaylai {
   position: relative;
   display: flex;
-  cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
+  cursor: pointer; /* Đổi hình con trỏ khi di chuột vào nút */
 }
 
 /*------------------------------*/

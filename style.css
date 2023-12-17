@@ -433,14 +433,58 @@ padding-top:10px;
   color:#526d5e;
   font-size: 13px;
 }
+/*--------------------------------------------------------------*/
+/*Trang Về chúng tôi  */
+.doingunhanvien{
+  padding: 30px;
+}
+.doingunhanvien .tieudedn h3{
+  text-align: center;
+  color:#337153;
+  font-size: 20px;
+}
+.doingunhanvien .tieudedn p{
+  text-align: center;
+  padding:20px;
+  color:#526557;
+  font-size: 15px;
+  line-height: 30px;
 
+}
+.doingunhanvien .nhanvien{
+  display:flex;
+  justify-content:center;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+  padding:20px;
+  font-size: large;
+  padding-bottom:10px ;
+  margin:30px;
+  color:#526557;
+}
+.doingunhanvien .nhanvien h4{
+  font-size: large;
+  padding:10px ;
+}
+
+.doingunhanvien .nhanvien  img{
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.doingunhanvien .nhanvien img:hover{
+  transform: scale(1.2);
+}
 
 /*--------------------------------------------------------------*/
 /*Trang chính sách */
 .chinhsach{
   background-color: rgba(162, 141, 109, 0.307);
 }
-
 
 .chinhsach .chinhsachnho{
   display:flex;
@@ -492,6 +536,7 @@ padding-top:10px;
 .workshop{
   background-color: rgba(184, 177, 167, 0.307);
 }
+/*Tiêu đề Workshop  */
 .workshop .workshop-dau{
   display:flex;
   text-align: center;
@@ -514,7 +559,7 @@ padding-top:10px;
 .workshop .workshop-dau .noidung p{
   font-style: italic;
 }
-
+/*Giới thiệu Workshop  */
 .gioithieu .gth-ws{
   display:flex;
   align-items: center;
@@ -541,8 +586,7 @@ padding-top:10px;
   border-radius: 30px;
 }
 
-
-
+/*Slide ảnh Workshop  */
 .ws-slider{
   background-color:#DCEADE;
 }
@@ -610,7 +654,7 @@ padding-top:10px;
   color:#526d5e;
 }
 
-
+/*Lịch Workshop*/
 
 .dangkyws .lichhoatdong{
   background-color: rgba(111, 126, 120, 0.29);

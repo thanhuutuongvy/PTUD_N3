@@ -30,7 +30,7 @@ document.querySelector('#timkiem').onclick = () => {
       },
       loop:true,
     });
-//------------------------------------SLIDE ĐÁNH GIÁ Ở TRANG CHỦ ------------------- 
+//------------------------------------SLIDE ĐÁNH GIÁ ------------------- 
     var swiper = new Swiper(".danhgia-slider", {
         spaceBetween: 20,
         centeredSlides: true,
@@ -54,12 +54,12 @@ document.querySelector('#timkiem').onclick = () => {
             },
         }
       });
-
+//------------------------------------SLIDE ẢNH TRANG WORKSHOP -------------------       
       var swiper = new Swiper(".ws-slider", {
         spaceBetween: 0,
         centeredSlides: true,
         autoplay: {
-          delay: 7500,
+          delay: 500,
           disableOnInteraction: false
         },
         loop:true,

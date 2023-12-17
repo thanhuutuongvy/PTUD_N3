@@ -1608,6 +1608,10 @@ gap: 20px;
 .bảng1 {
 margin-bottom: 30px; /* Khoảng cách giữa hai div */
 }
+.giỏ-hàng .thanhtoan a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ccc;
+  }
 /*CSS của VOUCHER CHUNG */
 .cacvoucher {
 display: none;
@@ -1980,7 +1984,10 @@ position: relative;
 display: flex;
 cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
 }
-
+.trangthanhtoan .quaylai a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+}
 /*------------------------------*/
 
 

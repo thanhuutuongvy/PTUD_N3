@@ -84,8 +84,6 @@
 
             // Hiển thị lại danh sách sản phẩm
             hienThiDanhSachSanPham();
-            cell7.className = 'action-buttons';
-
 
             // Xóa dữ liệu trong form
             document.getElementById('productName').value = '';
@@ -123,11 +121,11 @@
                 img.alt = sanPham.tenSanPham;
                 img.width = 50;
                 cell6.appendChild(img);
-                cell6.className = 'admin1_product_action-buttons';
-
 
                 cell7.innerHTML = '<button onclick="xoaSanPham(' + index + ')">Xóa</button>' +
                                   '<button onclick="chinhSuaSanPham(' + index + ')">Chỉnh sửa</button>';
+                cell7.className = 'admin1_product_action-buttons';
+
             });
         }
 

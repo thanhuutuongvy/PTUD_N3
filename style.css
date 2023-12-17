@@ -38,7 +38,7 @@ body{
     width:100%;
     height:100px;
     padding:5px;
-    position:fixed;/*Đặt phần header ở vị trí cố định trên trang web.*/
+    position:relative;/*Đặt phần header ở vị trí cố định trên trang web.*/
     background:#C4CCC6;
     display:flex; /*căn chỉnh các phần tử bên trong phần header theo chiều ngang.*/
     align-items: center;
@@ -204,7 +204,6 @@ padding-top:10px;
 }
 .trangchu .trangchu-slider .slide {
   width:100%;
-  padding-top: 100px;
   height:auto ;
   margin: 0 auto;
   position: relative;
@@ -440,7 +439,6 @@ padding-top:10px;
 /*--------------------------------------------------------------*/
 /*Trang chính sách */
 .chinhsach{
-  padding:100px 30px 0px 0px;
   background-color: rgba(162, 141, 109, 0.307);
 }
 
@@ -493,7 +491,6 @@ padding-top:10px;
 
 /* Trang workshop*/
 .workshop{
-  padding:100px 30px 0px 0px;
   background-color: rgba(184, 177, 167, 0.307);
 }
 .workshop .workshop-dau{
@@ -1995,7 +1992,6 @@ cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
 
 /*Trang tài khoản*/
  #header_line{
-  padding-top:130px;
   padding-bottom: 30px;
   text-align: center;
   background-color:rgb(101, 118, 104);
@@ -2240,6 +2236,13 @@ cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
 }
 
 /* Định dạng form thêm sản phẩm */
+#admin1_header_line{
+  color:#eef3f1;
+  padding: 30px;
+  text-align: center;
+  background-color:rgb(101, 118, 104);
+ }
+
 #productForm {
   max-width: 600px;
   margin: 20px auto;

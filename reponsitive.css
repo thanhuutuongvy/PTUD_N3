@@ -44,9 +44,6 @@
         text-align: center;
     }
 
-    .trangchu .trangchu-slider .slide{
-        padding-top:50px;
-    }
     .trangchu .trangchu-slider .noidung{
         padding: 5px;
         text-align: center;
@@ -65,7 +62,7 @@
       }
 
 
-
+/*Trang về chúng tôi */
     .vechungtoi .chungtoi{
         display:block;
         text-align: center;
@@ -80,7 +77,7 @@
         display:block;
     }
 
-
+/*Trang về chính sách */
     .chinhsach{
         padding:0;
     }
@@ -104,7 +101,7 @@
 
 
 
-
+    /*Trang workshop*/
       
     .workshop{
         padding: 0px;
@@ -174,6 +171,8 @@
         background: #54766a00;
         line-height: 30px;
       }
+
+      /*Header*/
     .header .logo img {
         width:130px;
     }
@@ -181,9 +180,10 @@
         width:100%;
         height:50px;
     }
-    .trangchu .trangchu-slider .slide{
-        padding-top:50px;
-    }
+
+
+    /*Trang chủ */
+
     .trangchu .trangchu-slider .noidung{
         padding: 5px;
         text-align: center;

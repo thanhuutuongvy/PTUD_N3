@@ -14,16 +14,6 @@ document.querySelector('#timkiem').onclick = () => {
   searchForm.classList.toggle('active');
 };
 
-//------------------------------Link trang login vào icon user----------------
-
-        // Lấy thẻ có id là 'user-icon'
-        var userIcon = document.getElementById('user-icon');
-
-        // Thêm sự kiện click
-        userIcon.addEventListener('click', function() {
-            // Chuyển hướng người dùng đến trang đăng nhập khách hàng
-            window.location.href = 'Khach hang login.html'; 
-        });
 
     
  //------------------------------------SLIDE TRANG CHỦ -------------------    
@@ -40,7 +30,7 @@ document.querySelector('#timkiem').onclick = () => {
       },
       loop:true,
     });
-//------------------------------------SLIDE ĐÁNH GIÁ Ở TRANG CHỦ ------------------- 
+//------------------------------------SLIDE ĐÁNH GIÁ ------------------- 
     var swiper = new Swiper(".danhgia-slider", {
         spaceBetween: 20,
         centeredSlides: true,
@@ -64,12 +54,12 @@ document.querySelector('#timkiem').onclick = () => {
             },
         }
       });
-
+//------------------------------------SLIDE ẢNH TRANG WORKSHOP -------------------       
       var swiper = new Swiper(".ws-slider", {
         spaceBetween: 0,
         centeredSlides: true,
         autoplay: {
-          delay: 7500,
+          delay: 500,
           disableOnInteraction: false
         },
         loop:true,

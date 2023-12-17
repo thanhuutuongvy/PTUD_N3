@@ -16,8 +16,11 @@ html{
 body{
     background-color: #d9d9d9;
     font-family: Helvetica,sans-serif;
+    overflow-x: hidden;
 }
-
+li{
+  list-style-type: none;
+}
 .btn{/*định dạng nút*/
   color:#eef3f1;
   font-weight: 500;
@@ -199,6 +202,9 @@ padding-top:10px;
 }
 /*------------------------------------*/
 
+/*-------TRANG CHỦ------------*/
+
+/*------SLider---------*/
 .trangchu{
   padding:0%;
 }
@@ -243,8 +249,6 @@ padding-top:10px;
   background-color:rgba(249, 249, 235, 0.8); /*Đặt màu nền của phần tử .slider-text khi hover là màu xám đậm với độ trong suốt 80%.*/
   transform: translate(-50%, -50%) scale(1.1); /*Dịch chuyển và co giãn phần tử .slider-text khi hover để tạo hiệu ứng phóng to*/
 }
-
-
 .slider-button:hover{
   color:#b2c1aa; /*Đặt màu nền của phần tử khi hover*/
 }
@@ -253,34 +257,31 @@ padding-top:10px;
 }
 .swiper-pagination{
   position:relative;
-
 }
 
-/*Sản phẩm bán chạy*/
+
+/*----------------Sản phẩm bán chạy-----------------*/
 .sanphambanchay{
   background-color: #b7c2b469;
+  padding: 40px;
 }
 .sanphambanchay h2{
   color:#337153;
   padding-bottom:10px;
   text-align: center;
 }
-.sanphambanchay .spbc{
+.sanphambanchay .spbc {
   display:flex;
-  flex-wrap: wrap;/*Xếp chồng các phần tử con thành nhiều hàng khi không đủ không gian ngang để chứa tất cả các phần tử trên cùng một hàng.*/
-  justify-content:space-around;
-  gap:20px;
-  
+  gap: 30px; /* Khoảng cách giữa các phần tử */
+  justify-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
 }
+  
 
-
-
-
-/*Về chúng tôi*/
+/*-----------Về chúng tôi---------------*/
 .vechungtoi h2{
   color:#337153;
-  padding-bottom: 30px;
-  padding-top: 200px;
+  padding: 30px;
 }
 
 .vechungtoi .chungtoi{
@@ -310,7 +311,7 @@ padding-top:10px;
   background-color: #366b40;
 }
 
-/* Uư điểm */
+/*------Uư điểm--------*/
 .uudiem {
   background-color: #8c9b91;
 }
@@ -340,9 +341,7 @@ padding-top:10px;
 }
 
 
-
-
-/*Workshop*/
+/*-------------------Workshop-------------------*/
 .workshop-trangchu {
   background-image: url(https://i.ytimg.com/vi/74DQq51XbZ8/maxresdefault.jpg);
   background-repeat: none;/*không lặp lại ảnh nền*/
@@ -434,14 +433,58 @@ padding-top:10px;
   color:#526d5e;
   font-size: 13px;
 }
+/*--------------------------------------------------------------*/
+/*Trang Về chúng tôi  */
+.doingunhanvien{
+  padding: 30px;
+}
+.doingunhanvien .tieudedn h3{
+  text-align: center;
+  color:#337153;
+  font-size: 20px;
+}
+.doingunhanvien .tieudedn p{
+  text-align: center;
+  padding:20px;
+  color:#526557;
+  font-size: 15px;
+  line-height: 30px;
 
+}
+.doingunhanvien .nhanvien{
+  display:flex;
+  justify-content:center;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+  padding:20px;
+  font-size: large;
+  padding-bottom:10px ;
+  margin:30px;
+  color:#526557;
+}
+.doingunhanvien .nhanvien h4{
+  font-size: large;
+  padding:10px ;
+}
+
+.doingunhanvien .nhanvien  img{
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.doingunhanvien .nhanvien img:hover{
+  transform: scale(1.2);
+}
 
 /*--------------------------------------------------------------*/
 /*Trang chính sách */
 .chinhsach{
   background-color: rgba(162, 141, 109, 0.307);
 }
-
 
 .chinhsach .chinhsachnho{
   display:flex;
@@ -493,6 +536,7 @@ padding-top:10px;
 .workshop{
   background-color: rgba(184, 177, 167, 0.307);
 }
+/*Tiêu đề Workshop  */
 .workshop .workshop-dau{
   display:flex;
   text-align: center;
@@ -515,7 +559,7 @@ padding-top:10px;
 .workshop .workshop-dau .noidung p{
   font-style: italic;
 }
-
+/*Giới thiệu Workshop  */
 .gioithieu .gth-ws{
   display:flex;
   align-items: center;
@@ -542,8 +586,7 @@ padding-top:10px;
   border-radius: 30px;
 }
 
-
-
+/*Slide ảnh Workshop  */
 .ws-slider{
   background-color:#DCEADE;
 }
@@ -611,7 +654,7 @@ padding-top:10px;
   color:#526d5e;
 }
 
-
+/*Lịch Workshop*/
 
 .dangkyws .lichhoatdong{
   background-color: rgba(111, 126, 120, 0.29);
@@ -656,229 +699,216 @@ padding-top:10px;
 
 /*Trang cửa hàng  */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); /*import font chữ Open Sans từ Google Fonts với hai trọng số khác nhau (400 và 600) */
-.cartegory {
-         font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
-            color: #111;
-            line-height: 1.15;
-            margin-bottom: 30px;
-        }
-.containercartegory{
-    max-width: 1200px;
-    margin: auto;
+
+.cartegory {width: 1200px; margin: auto;}
+.trai {width: 20%;}
+.phai {width: 100%;}
+.trai .phai {box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;}
+#tongdanhmuc>.cap  { 
+    background: rgb(160, 202, 150); padding: 8px 10px;
+    font-weight: bold; text-transform: uppercase; 
+    cursor: pointer; color: white;font-size: 18px;
 }
-.row{
-        display: flex;
-        flex-wrap: wrap;
+#tongdanhmuc > .danhmuc > label {
+    margin: 8px 0 8px 30px;
+    font-size: 16px; 
+    display: block; 
+    cursor: pointer; 
 }
-.cartegory-top {
-    margin-top: 30px;
+#tongdanhmuc > .danhmuc input { width: 16px; height: 16px; margin-right: 10px;}
+
+
+
+/*sp*/
+.sanpham{ /*định dạng danh sách không có thứ tự có class "sanpham". loại bỏ kiểu danh sách mặc định, làm cho các mục danh sách hiển thị dưới dạng các phần tử flex và sắp xếp chúng thành một hàng với khoảng cách giữa các phần tử.*/
+    display: flex; /*căn chỉnh và xếp chồng các phần tử con bên trong.*/
+    flex-wrap: wrap;/*Xếp chồng các phần tử con thành nhiều hàng khi không đủ không gian ngang để chứa tất cả các phần tử trên cùng một hàng.*/
+    justify-content:center;
+    list-style-type: none;
+  }
+.sanpham-item{
+    border: 1px solid #BDBDBD;
+    padding: 10px 0px 0px;
+    margin-bottom: 1.5em;
+
 }
-.cartegory-top p {
-    font-family: var(--main-text-font);
-    margin: 0 12px;
-    font-size: 12px;
-    
+.sanpham-item:hover {/*định dạng các phần tử có class "sanpham-item" khi được hover. Nó thay đổi viền thành 1 pixel solid #4cf799 và đặt màu nền là #ecffe7.*/
+    border: 1px solid #526d5e;
+    background: #ecffe7;
 }
-li.cartegory-left-li  {
-    list-style: none;
+ul.sanpham li{/*định dạng các mục danh sách trong danh sách "sanpham"*/
+    flex-basis: 25%;/*mỗi mục chiếm 25% không gian có sẵn*/
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box; /*(bao gồm padding và border trong tổng chiều rộng và chiều cao của phần tử*/
+    margin-bottom: 30px;
 }
-.cartegory-left {
-    width: 20%;
+ul.sanpham li img{/*định dạng hình ảnh trong các mục danh sách*/
+    max-width: 200px;
+    padding:10px;
+     -moz-transition: all 0.3s;
+     -webkit-transition: all 0.3s;
+     transition: all 0.3s;/*áp dụng hiệu ứng transition với thời gian 0.3 giây.*/
+}
+ul.sanpham li:hover img {/*định dạng hình ảnh trong các mục danh sách khi được hover. */
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);/* co giãn hình ảnh lên 1.1 lần kích thước ban đầu bằng cách sử dụng thuộc tính transform */
+}
+ul.sanpham li .sanpham-top{
+    position: relative;
+    overflow: hidden; /*ẩn bất kỳ nội dung nào vượt quá phần tử*/
+}
+ul.sanpham li .sanpham-top .sanpham-thumb{
+    display: block;
+}
+ul.sanpham li .sanpham-top .sanpham-thumb img{
+    display: block;
+}
+ul.sanpham li:hover .sanpham-top .sanpham-thumb img{
+    filter: opacity(70%);/*áp dụng một hiệu ứng filter giảm độ mờ của hình ảnh xuống còn 70%*/
+}
+ul.sanpham li .sanpham-top a.mua {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #366b40;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    transition: 0.25s ease-in-out;/*Áp dụng hiệu ứng chuyển đổi trong thời gian 0.25 giây với chế độ chuyển đổi là "ease-in-out".*/
+    opacity: 0.85; /* Đặt độ mờ (độ trong suốt) của phần tử là 0.85 (85%).*/
+}
+ul.sanpham li:hover a.mua{
+    bottom: 0px; /*khi di chuột vị trí bottom của liên kết "Mua" được đặt thành 0px, hiển thị phần tử ở vị trí ban đầu.*/
+}
+ul.sanpham li .sanpham-info {/*Định dạng thông tin sp*/
+    padding: 10px 10px;
+}
+ul.sanpham li .sanpham-info a{
+    display: block;
+    text-decoration: none;
+}
+ul.sanpham li .sanpham-info a.sanpham-danhmuc{/*Định dạng danh mục sp*/
+    font-size: 13px;
+    text-transform: uppercase;/*Chuyển đổi chữ thành viết hoa.*/
+    color: #9e9e9e;
+    padding: 3px 0px;
+   
+}
+ul.sanpham li .sanpham-info a.sanpham-name{/*Định dang tên sp*/
+    color: #334862;
+    padding: 3px 0px;
+}
+ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
+    color: #111;
+    padding: 3px 0px;
+    font-weight: 600;
 }
 
-.cartegory-right {
-    width: 80%;
+#img_card {
+    border-radius: 10px;
+    width: 100px;
 }
-.cartegory-right-top-select{
-    display:flex;
+
+.original-price {
+    text-decoration: line-through;
+    color: grey;
 }
-.cartegory-right-top-item:first-child {
+
+.discounted-price {
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+.checked {
+    color: orange;
+  }
+
+
+.sapxep:first-child {
     flex: 2;
     font-size: 16px;
     font-family: var(--main-text-font);
     text-transform: uppercase;
     font-weight: bold;
 }
-.cartegory-right-top-item select {
-    display: block;
-    width: 50%;
-    padding: 10px 15px;
-    cursor: pointer;
-    background-color: #ffff;
-    border: 1px solid #dddddd;
-}
-
-.cartegory-right-top-item {
+.sapxep{width: 100%;}
+.sapxepsp {
+    display: flex;
     flex: 1;
     padding: 0 12px;
 }
-
-.cartegory-left>ul>li {
-    padding: 12px 0;
-}
-
-.cartegory-left-row>ul>li>a {
-    color: black;
+.sapxepsp span {
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 12px;
-    font-weight: bold;
-    font-family: var(--main-text-font);
+}
+.sapxepsp button {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #ffff;
+    border: 1px solid #dddddd;
+    margin: 10px;
+}
+.btn-sapxep:hover{
+    background-color: #368624;
 }
 
-.cartegory-left ul li ul li {
-    padding-left: 10px;
+
+.sapxepsp  select {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #ffff;
+    border: 1px solid #dddddd;
+    margin: 10px;
 }
 
-.cartegory-left ul li ul li:hover a {
-    color: #0d780d;
+
+.btnxemthem{/*định dạng nút*/
+    font-size: 16px;
+    color: #111;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid rgb(30, 103, 53);
+    display: inline-block;
+    color: #326926;
+    font-weight: 600;
+    transition: all 0.5s;/*hiết lập hiệu ứng chuyển đổi cho tất cả các thuộc tính với thời gian 0.5s.*/
+    margin-bottom: 30px;
+}
+    .btnxemthem span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
-.cartegory-left-li-row ul {
-    height: 0;
-    overflow-y: hidden;
-    transition: all 0.3s ease;
-}
-
-.cartegory-left-li.block ul {
-    height: auto;
-
-}
-
-.cartegory-left-row ul li ul li a {
-    color: black;
-    font-size: 12px;}
-
-    .right-content-sanpham-gia .original-price {
-      color: #000;
-      text-decoration: none;
+    .btnxemthem span:after {
+    content: '\00bb'; /*Thiết lập nội dung của phần tử :after là dấu mũi tên chéo (»).*/
+    position: absolute;
+    opacity: 0; /* Thiết lập độ mờ của phần tử là 0, tức là ẩn đi ban đầu.*/
+    top: 0;/*vị trí từ phía trên là 0.*/
+    right: -10px;/*Thiết lập vị trí từ phía bên phải là -10px, tức là ngoài khung hiển thị*/
+    transition: 0.5s;/* hiệu ứng chuyển đổi cho thuộc tính với thời gian 0.5s*/
     }
 
-.right-content-sanpham-gia .discounted-price {
-    color: #9e9e9e;
-    text-decoration:line-through #e00606;
-}
-        ul.cartegory-right-content-item{ /*định dạng danh sách không có thứ tự có class "sanpham". loại bỏ kiểu danh sách mặc định, làm cho các mục danh sách hiển thị dưới dạng các phần tử flex và sắp xếp chúng thành một hàng với khoảng cách giữa các phần tử.*/
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .right-content-sanpham{
-            border: 1px solid #BDBDBD;
-            padding: 10px 0px 10px 0px;
-            margin-bottom: 1.5em;
-        }
-        .right-content-sanpham:hover {/*định dạng các phần tử có class "sanpham-item" khi được hover. Nó thay đổi viền thành 1 pixel solid #4cf799 và đặt màu nền là #ecffe7.*/
-            border: 1px solid #4cf799;
-            background: #ecffe7;
-        }
-        ul.cartegory-right-content-item li{/*định dạng các mục danh sách trong danh sách "sanpham"*/
-            flex-basis: 25%;/*mỗi mục chiếm 25% không gian có sẵn*/
-            padding-left: 10px;
-            padding-right: 10px;
-            box-sizing: border-box; /*(bao gồm padding và border trong tổng chiều rộng và chiều cao của phần tử*/
-            margin-bottom: 30px;
-        }
-        ul.cartegory-right-content-item li img{/*định dạng hình ảnh trong các mục danh sách*/
-            max-width: 200px;
-            padding-left: 2em;/*chiều rộng tối đa là 200 pixel, thêm padding bên trái là 2em*/
-             -moz-transition: all 0.3s;
-             -webkit-transition: all 0.3s;
-             transition: all 0.3s;/*áp dụng hiệu ứng transition với thời gian 0.3 giây.*/
-        }
+    .btnxemthem:hover span { /*Áp dụng khi di chuột hover vào phần tử span bên trong phần tử có lớp "btn".*/
+    padding-right: 25px;
+    }
 
-        ul.cartegory-right-content-item li:hover img {/*định dạng hình ảnh trong các mục danh sách khi được hover. */
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);/* co giãn hình ảnh lên 1.1 lần kích thước ban đầu bằng cách sử dụng thuộc tính transform */
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-top{
-            position: relative;
-            overflow: hidden; /*ẩn bất kỳ nội dung nào vượt quá phần tử*/
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-top .right-content-sanpham-thumb{
-            display: block;
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-top .right-content-sanpham-thumb img{
-            display: block;
-        }
-        ul.cartegory-right-content-item li:hover .right-content-sanpham-top .right-content-sanpham-thumb img{
-            filter: opacity(70%);/*áp dụng một hiệu ứng filter giảm độ mờ của hình ảnh xuống còn 70%*/
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-top a.mua {
-            text-transform: uppercase;
-            text-decoration: none;
-            text-align: center;
-            display: block;
-            background-color: #0c8021;
-            color: #fff;
-            padding: 10px 0px;
-            position: absolute;
-            bottom: -40px;
-            width: 100%;
-            transition: 0.25s ease-in-out;/*Áp dụng hiệu ứng chuyển đổi trong thời gian 0.25 giây với chế độ chuyển đổi là "ease-in-out".*/
-            opacity: 0.85; /* Đặt độ mờ (độ trong suốt) của phần tử là 0.85 (85%).*/
-        }
-        ul.cartegory-right-content-item li:hover a.mua{
-            bottom: 0px; /*khi di chuột vị trí bottom của liên kết "Mua" được đặt thành 0px, hiển thị phần tử ở vị trí ban đầu.*/
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-info {/*Định dạng thông tin sp*/
-            padding: 10px 10px;
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-info a{
-            display: block;
-            text-decoration: none;
-        }
-        ul.cartegory-right-content-itemli .right-content-sanpham-info a.right-content-sanpham-danhmuc{/*Định dạng danh mục sp*/
-            font-size: 11px;
-            text-transform: uppercase;/*Chuyển đổi chữ thành viết hoa.*/
-            color: #9e9e9e;
-            padding: 3px 0px;
-            
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-info a.right-content-sanpham-name{/*Định dang tên sp*/
-            color: #334862;
-            padding: 3px 0px;
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-info .right-content-sanpham-gia{/*Định dạng giá sp*/
-            color: #111;
-            padding: 3px 0px;
-            font-weight: 600;
-        }
-        .btnxemthem{/*định dạng nút*/
-            font-size: 16px;
-            color: #111;
-            padding: 10px 20px;
-            text-transform: uppercase;
-            border: 1px solid rgb(30, 103, 53);
-            display: inline-block;
-            color: #326926;
-            font-weight: 600;
-            transition: all 0.5s;/*hiết lập hiệu ứng chuyển đổi cho tất cả các thuộc tính với thời gian 0.5s.*/
-}
-            .btnxemthem span {
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-}
-
-            .btnxemthem span:after {
-            content: '\00bb'; /*Thiết lập nội dung của phần tử :after là dấu mũi tên chéo (»).*/
-            position: absolute;
-            opacity: 0; /* Thiết lập độ mờ của phần tử là 0, tức là ẩn đi ban đầu.*/
-            top: 0;/*vị trí từ phía trên là 0.*/
-            right: -10px;/*Thiết lập vị trí từ phía bên phải là -10px, tức là ngoài khung hiển thị*/
-            transition: 0.5s;/* hiệu ứng chuyển đổi cho thuộc tính với thời gian 0.5s*/
-            }
-
-            .btnxemthem:hover span { /*Áp dụng khi di chuột hover vào phần tử span bên trong phần tử có lớp "btn".*/
-            padding-right: 25px;
-            }
-
-            .btnxemthem:hover span:after {
-            opacity: 1; /*Thiết lập độ mờ của phần tử là 1, tức là hiển thị phần tử.*/
-            right: 0; /*vị trí từ phía bên phải là 0, tức là nằm trong khung hiển thị.*/
+    .btnxemthem:hover span:after {
+    opacity: 1; /*Thiết lập độ mờ của phần tử là 1, tức là hiển thị phần tử.*/
+    right: 0; /*vị trí từ phía bên phải là 0, tức là nằm trong khung hiển thị.*/
 }
 
 /* ----------PRODUCT----------- */
@@ -929,169 +959,8 @@ li.cartegory-left-li  {
     border: 1px solid #dddddd;
 }
 
-.cartegory-right-top-item {
-    flex: 1;
-    padding: 0 12px;
-}
-
-.cartegory-left>ul>li {
-    padding: 12px 0;
-}
-
-.cartegory-left-row>ul>li>a {
-    color: black;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: var(--main-text-font);
-}
-
-.cartegory-left ul li ul li {
-    padding-left: 10px;
-}
-
-.cartegory-left ul li ul li:hover a {
-    color: #0d780d;
-}
-
-.cartegory-left-li-row ul {
-    height: 0;
-    overflow-y: hidden;
-    transition: all 0.3s ease;
-}
-
-.cartegory-left-li.block ul {
-    height: auto;
-
-}
-
-.cartegory-left-row ul li ul li a {
-    color: black;
-    font-size: 12px;}
 
 
-        .cartegory-right-content-item{ /*định dạng danh sách không có thứ tự có class "sanpham". loại bỏ kiểu danh sách mặc định, làm cho các mục danh sách hiển thị dưới dạng các phần tử flex và sắp xếp chúng thành một hàng với khoảng cách giữa các phần tử.*/
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 10px;
-            padding: 10px 0px 10px 0px;
-        }
-        .right-content-sanpham{
-            border: 1px solid #BDBDBD;
-            margin-bottom: 1.5em;
-        }
-        .right-content-sanpham:hover {/*định dạng các phần tử có class "sanpham-item" khi được hover. Nó thay đổi viền thành 1 pixel solid #4cf799 và đặt màu nền là #ecffe7.*/
-            border: 1px solid #4cf799;
-            background: #ecffe7;
-        }
-        .cartegory-right-content-item li{/*định dạng các mục danh sách trong danh sách "sanpham"*/
-            flex-basis: 25%;/*mỗi mục chiếm 25% không gian có sẵn*/
-            padding-left: 10px;
-            padding-right: 10px;
-            box-sizing: border-box; /*(bao gồm padding và border trong tổng chiều rộng và chiều cao của phần tử*/
-            margin-bottom: 30px;
-        }
-        .cartegory-right-content-item li img{/*định dạng hình ảnh trong các mục danh sách*/
-            max-width: 200px;
-            padding-left: 2em;/*chiều rộng tối đa là 200 pixel, thêm padding bên trái là 2em*/
-             -moz-transition: all 0.3s;
-             -webkit-transition: all 0.3s;
-             transition: all 0.3s;/*áp dụng hiệu ứng transition với thời gian 0.3 giây.*/
-        }
-
-        ul.cartegory-right-content-item li:hover img {/*định dạng hình ảnh trong các mục danh sách khi được hover. */
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.5);/* co giãn hình ảnh lên 1.1 lần kích thước ban đầu bằng cách sử dụng thuộc tính transform */
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-top{
-            position: relative;
-            overflow: hidden; /*ẩn bất kỳ nội dung nào vượt quá phần tử*/
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-top .right-content-sanpham-thumb{
-            display: block;
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-top .right-content-sanpham-thumb img{
-            display: block;
-        }
-        ul.cartegory-right-content-item li:hover .right-content-sanpham-top .right-content-sanpham-thumb img{
-            filter: opacity(70%);/*áp dụng một hiệu ứng filter giảm độ mờ của hình ảnh xuống còn 70%*/
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-top a.mua {
-            text-transform: uppercase;
-            text-decoration: none;
-            text-align: center;
-            display: block;
-            background-color: #0c8021;
-            color: #fff;
-            padding: 10px 0px;
-            position: absolute;
-            bottom: -40px;
-            width: 100%;
-            transition: 0.25s ease-in-out;/*Áp dụng hiệu ứng chuyển đổi trong thời gian 0.25 giây với chế độ chuyển đổi là "ease-in-out".*/
-            opacity: 0.85; /* Đặt độ mờ (độ trong suốt) của phần tử là 0.85 (85%).*/
-        }
-        ul.cartegory-right-content-item li:hover a.mua{
-            bottom: 0px; /*khi di chuột vị trí bottom của liên kết "Mua" được đặt thành 0px, hiển thị phần tử ở vị trí ban đầu.*/
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-info {/*Định dạng thông tin sp*/
-            padding: 10px 10px;
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-info a{
-            display: block;
-            text-decoration: none;
-        }
-        ul.cartegory-right-content-itemli .right-content-sanpham-info a.right-content-sanpham-danhmuc{/*Định dạng danh mục sp*/
-            font-size: 11px;
-            text-transform: uppercase;/*Chuyển đổi chữ thành viết hoa.*/
-            color: #9e9e9e;
-            padding: 3px 0px;
-            
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-info a.right-content-sanpham-name{/*Định dang tên sp*/
-            color: #334862;
-            padding: 3px 0px;
-        }
-        ul.cartegory-right-content-item li .right-content-sanpham-info .right-content-sanpham-gia{/*Định dạng giá sp*/
-            color: #111;
-            padding: 3px 0px;
-            font-weight: 600;
-        }
-        .btnxemthem{/*định dạng nút*/
-            font-size: 16px;
-            color: #111;
-            padding: 10px 20px;
-            text-transform: uppercase;
-            border: 1px solid rgb(30, 103, 53);
-            display: inline-block;
-            color: #326926;
-            font-weight: 600;
-            transition: all 0.5s;/*hiết lập hiệu ứng chuyển đổi cho tất cả các thuộc tính với thời gian 0.5s.*/
-}
-            .btnxemthem span {
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-}
-
-            .btnxemthem span:after {
-            content: '\00bb'; /*Thiết lập nội dung của phần tử :after là dấu mũi tên chéo (»).*/
-            position: absolute;
-            opacity: 0; /* Thiết lập độ mờ của phần tử là 0, tức là ẩn đi ban đầu.*/
-            top: 0;/*vị trí từ phía trên là 0.*/
-            right: -10px;/*Thiết lập vị trí từ phía bên phải là -10px, tức là ngoài khung hiển thị*/
-            transition: 0.5s;/* hiệu ứng chuyển đổi cho thuộc tính với thời gian 0.5s*/
-            }
-
-            .btnxemthem:hover span { /*Áp dụng khi di chuột hover vào phần tử span bên trong phần tử có lớp "btn".*/
-            padding-right: 25px;
-            }
-
-            .btnxemthem:hover span:after {
-            opacity: 1; /*Thiết lập độ mờ của phần tử là 1, tức là hiển thị phần tử.*/
-            right: 0; /*vị trí từ phía bên phải là 0, tức là nằm trong khung hiển thị.*/
-}
 
 .row {
     display: flex;
@@ -2116,6 +1985,7 @@ cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
       border: 1px solid #BDBDBD;
       padding: 10px 0px 0px;
       margin-bottom: 1.5em;
+      width:200px;
   
   }
   .sanpham-item:hover {/*định dạng các phần tử có class "sanpham-item" khi được hover. Nó thay đổi viền thành 1 pixel solid #4cf799 và đặt màu nền là #ecffe7.*/
@@ -2354,75 +2224,75 @@ cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
 /* CSS cho trang quản lý sản phẩm */
 
 .quanlysptitle {
-  text-align: center;
-  color: #337153;
+    text-align: center;
+    color: #337153;
 }
 
 /* Định dạng form thêm sản phẩm */
 #productForm {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 #productForm label {
-  display: block;
-  margin-bottom: 8px;
+    display: block;
+    margin-bottom: 8px;
 }
 
 #productForm input,
 #productForm select,
 #productForm button {
-  margin-bottom: 15px;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #productForm button {
-  background-color: #337153;
-  color: #fff;
-  cursor: pointer;
+    background-color: #337153;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* Định dạng bảng hiển thị sản phẩm */
 #productTable {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
 #productTable th,
 #productTable td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
 
 #productTable th {
-  background-color: #337153;
-  color: #fff;
+    background-color: #337153;
+    color: #fff;
 }
 
 #productList img {
-  width: 50px;
-  height: auto;
+    width: 50px;
+    height: auto;
 }
 
 /* CSS cho nút hành động trong bảng */
 .admin1_product_action-buttons button {
-  background-color: #337153;
-  color: #fff;
-  padding: 5px 10px;
-  margin-right: 5px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
+    background-color: #337153;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
 .admin1_product_action button:hover {
-  background-color: #c4ccc6;
+    background-color: #c4ccc6;
 }
 

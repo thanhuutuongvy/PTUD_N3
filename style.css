@@ -280,7 +280,7 @@ padding-top:10px;
 .vechungtoi h2{
   color:#337153;
   padding-bottom: 30px;
-
+  padding-top: 200px;
 }
 
 .vechungtoi .chungtoi{
@@ -2283,6 +2283,7 @@ cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
   width: 50px;
   height: auto;
 }
+/*------------------------------------------------*/
 
 /* CSS cho nút hành động trong bảng */
 .action-buttons button {
@@ -2298,5 +2299,50 @@ cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
 .action-buttons button:hover {
   background-color: #c4ccc6;
 }
+
+/* CSS cho trang quản lý đơn hàng */
+.quanlydonhangtitle {
+  text-align: center;
+  color: #337153;
+}
+
+.quanlydonhang_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.quanlydonhang_tr, .quanlydonhang_th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.quanlydonhang_th {
+  background-color: #337153;
+  color: #fff;
+}
+
+#orderList {
+  font-size: 14px;
+}
+
+/* Optional: Style for different order statuses */
+.tinhTrangChuanBi {
+  color: #337153; /* Màu xanh lá cây */
+  font-weight: bold;
+}
+
+.tinhTrangDangGiao {
+  color: #e07c07; /* Màu cam đậm */
+  font-weight: bold;
+}
+
+.tinhTrangHoanThanh {
+  color: #2ecc71; /* Màu xanh lá cây nhạt */
+  font-weight: bold;
+}
+/*-------------------------------------------------*/
+
 
 

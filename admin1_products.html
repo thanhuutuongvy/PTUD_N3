@@ -3,134 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý Khuyến mãi</title>
+    <title>Quản lý Sản phẩm</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./admin1_products.css">
+
     <link rel="stylesheet" href="./reponsitive.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Quản lý Khuyến mãi</h1>
+    <h1 class ='quanlysptitle'>Quản lý Sản phẩm</h1>
 
-    <form id="promotionForm">
-        <label for="promotionName">Tên Khuyến mãi:</label>
-        <input type="text" id="promotionName" required>
+    <form id="productForm">
+        <label for="productName">Tên Sản phẩm:</label>
+        <input type="text" id="productName" required>
 
-        <label for="promotionCode">Mã Khuyến mãi:</label>
-        <input type="text" id="promotionCode" required>
+        <label for="productCode">Mã Sản phẩm:</label>
+        <input type="text" id="productCode" required>
 
-        <label for="promotionPercentage">Giá trị Khuyến mãi (%):</label>
-        <input type="number" id="promotionPercentage" required>
+        <label for="productCollection">Bộ sưu tập:</label>
+        <select id="productCollection">
+            <option value="muaXuan">Bộ sưu tập mùa xuân</option>
+            <option value="muaHa">Bộ sưu tập mùa hạ</option>
+            <option value="muaThu">Bộ sưu tập mùa thu</option>
+            <option value="muaDong">Bộ sưu tập mùa đông</option>
+            <option value="khac">Khác</option>
+        </select>
 
-        <label for="promotionStartDate">Ngày bắt đầu:</label>
-        <input type="date" id="promotionStartDate" required>
+        <label for="productQuantity">Số lượng:</label>
+        <input type="number" id="productQuantity" required>
 
-        <label for="promotionEndDate">Ngày kết thúc:</label>
-        <input type="date" id="promotionEndDate" required>
+        <label for="productPrice">Giá:</label>
+        <input type="number" id="productPrice" required>
 
-        <button type="button" onclick="themKhuyenMai()">Thêm Khuyến mãi</button>
+        <label for="productImage">Hình ảnh:</label>
+        <input type="file" id="productImage" accept="image/*" required>
+
+        <button type="button" onclick="themSanPham()">Thêm Sản phẩm</button>
     </form>
 
-    <table id="promotionTable">
+    <table id="productTable">
         <thead>
             <tr>
-                <th>Tên Khuyến mãi</th>
-                <th>Mã Khuyến mãi</th>
-                <th>Giá trị (%)</th>
-                <th>Ngày bắt đầu</th>
-                <th>Ngày kết thúc</th>
+                <th>Tên Sản phẩm</th>
+                <th>Mã Sản phẩm</th>
+                <th>Bộ sưu tập</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Hình ảnh</th>
                 <th>Hành động</th>
             </tr>
         </thead>
-        <tbody id="promotionList"></tbody>
+        <tbody id="productList"></tbody>
     </table>
 
     <script>
-        let danhSachKhuyenMai = [];
+        let danhSachSanPham = [];
 
-        function themKhuyenMai() {
+        function themSanPham() {
             // Lấy giá trị từ các input
-            let tenKhuyenMai = document.getElementById('promotionName').value;
-            let maKhuyenMai = document.getElementById('promotionCode').value;
-            let giaTriKhuyenMai = document.getElementById('promotionPercentage').value;
-            let ngayBatDau = document.getElementById('promotionStartDate').value;
-            let ngayKetThuc = document.getElementById('promotionEndDate').value;
+            let tenSanPham = document.getElementById('productName').value;
+            let maSanPham = document.getElementById('productCode').value;
+            let boSuuTap = document.getElementById('productCollection').value;
+            let soLuong = document.getElementById('productQuantity').value;
+            let gia = document.getElementById('productPrice').value;
+            let hinhAnh = document.getElementById('productImage').files[0];
 
-            // Thêm khuyến mãi vào danh sách
-            danhSachKhuyenMai.push({
-                tenKhuyenMai: tenKhuyenMai,
-                maKhuyenMai: maKhuyenMai,
-                giaTriKhuyenMai: giaTriKhuyenMai,
-                ngayBatDau: ngayBatDau,
-                ngayKetThuc: ngayKetThuc
-            });
+            // Tạo đối tượng sản phẩm
+            let sanPham = {
+                tenSanPham: tenSanPham,
+                maSanPham: maSanPham,
+                boSuuTap: boSuuTap,
+                soLuong: soLuong,
+                gia: gia,
+                hinhAnh: hinhAnh,
+            };
 
-            // Hiển thị lại danh sách khuyến mãi
-            hienThiDanhSachKhuyenMai();
+            // Thêm sản phẩm vào danh sách
+            danhSachSanPham.push(sanPham);
+
+            // Hiển thị lại danh sách sản phẩm
+            hienThiDanhSachSanPham();
+            cell7.className = 'action-buttons';
+
 
             // Xóa dữ liệu trong form
-            document.getElementById('promotionName').value = '';
-            document.getElementById('promotionCode').value = '';
-            document.getElementById('promotionPercentage').value = '';
-            document.getElementById('promotionStartDate').value = '';
-            document.getElementById('promotionEndDate').value = '';
+            document.getElementById('productName').value = '';
+            document.getElementById('productCode').value = '';
+            document.getElementById('productCollection').value = 'muaXuan'; // Reset giá trị mặc định
+            document.getElementById('productQuantity').value = '';
+            document.getElementById('productPrice').value = '';
+            document.getElementById('productImage').value = '';
         }
 
-        function hienThiDanhSachKhuyenMai() {
-            let promotionList = document.getElementById('promotionList');
-            promotionList.innerHTML = '';
+        function hienThiDanhSachSanPham() {
+            let productList = document.getElementById('productList');
+            productList.innerHTML = '';
 
-            // Hiển thị danh sách khuyến mãi
-            danhSachKhuyenMai.forEach(function (khuyenMai) {
-                let row = promotionList.insertRow();
+            // Hiển thị danh sách sản phẩm
+            danhSachSanPham.forEach(function (sanPham, index) {
+                let row = productList.insertRow();
                 let cell1 = row.insertCell(0);
                 let cell2 = row.insertCell(1);
                 let cell3 = row.insertCell(2);
                 let cell4 = row.insertCell(3);
                 let cell5 = row.insertCell(4);
                 let cell6 = row.insertCell(5);
+                let cell7 = row.insertCell(6);
 
-                cell1.textContent = khuyenMai.tenKhuyenMai;
-                cell2.textContent = khuyenMai.maKhuyenMai;
-                cell3.textContent = khuyenMai.giaTriKhuyenMai;
-                cell4.textContent = khuyenMai.ngayBatDau;
-                cell5.textContent = khuyenMai.ngayKetThuc;
-                cell6.innerHTML = '<button onclick="xoaKhuyenMai(this)">Xóa</button> <button onclick="chinhSuaKhuyenMai(this)">Chỉnh sửa</button>';
+                cell1.textContent = sanPham.tenSanPham;
+                cell2.textContent = sanPham.maSanPham;
+                cell3.textContent = sanPham.boSuuTap;
+                cell4.textContent = sanPham.soLuong;
+                cell5.textContent = sanPham.gia;
+
+                // Hiển thị hình ảnh
+                let img = document.createElement('img');
+                img.src = URL.createObjectURL(sanPham.hinhAnh);
+                img.alt = sanPham.tenSanPham;
+                img.width = 50;
+                cell6.appendChild(img);
+                cell6.className = 'admin1_product_action-buttons';
+
+
+                cell7.innerHTML = '<button onclick="xoaSanPham(' + index + ')">Xóa</button>' +
+                                  '<button onclick="chinhSuaSanPham(' + index + ')">Chỉnh sửa</button>';
             });
         }
 
-        function xoaKhuyenMai(button) {
-            // Lấy index của hàng trong table
-            let row = button.parentNode.parentNode;
-            let rowIndex = row.rowIndex - 1;
+        function xoaSanPham(index) {
+            // Xóa sản phẩm khỏi danh sách
+            danhSachSanPham.splice(index, 1);
 
-            // Xóa khuyến mãi khỏi danh sách
-            danhSachKhuyenMai.splice(rowIndex, 1);
-
-            // Hiển thị lại danh sách khuyến mãi
-            hienThiDanhSachKhuyenMai();
+            // Hiển thị lại danh sách sản phẩm
+            hienThiDanhSachSanPham();
         }
 
-        function chinhSuaKhuyenMai(button) {
-            // Lấy index của hàng trong table
-            let row = button.parentNode.parentNode;
-            let rowIndex = row.rowIndex - 1;
-
-            // Lấy thông tin khuyến mãi từ danh sách
-            let khuyenMai = danhSachKhuyenMai[rowIndex];
+        function chinhSuaSanPham(index) {
+            // Lấy thông tin sản phẩm từ danh sách
+            let sanPham = danhSachSanPham[index];
 
             // Đổ dữ liệu vào form chỉnh sửa
-            document.getElementById('promotionName').value = khuyenMai.tenKhuyenMai;
-            document.getElementById('promotionCode').value = khuyenMai.maKhuyenMai;
-            document.getElementById('promotionPercentage').value = khuyenMai.giaTriKhuyenMai;
-            document.getElementById('promotionStartDate').value = khuyenMai.ngayBatDau;
-            document.getElementById('promotionEndDate').value = khuyenMai.ngayKetThuc;
+            document.getElementById('productName').value = sanPham.tenSanPham;
+            document.getElementById('productCode').value = sanPham.maSanPham;
+            document.getElementById('productCollection').value = sanPham.boSuuTap;
+            document.getElementById('productQuantity').value = sanPham.soLuong;
+            document.getElementById('productPrice').value = sanPham.gia;
 
-            // Xóa khuyến mãi khỏi danh sách
-            danhSachKhuyenMai.splice(rowIndex, 1);
+            // Xóa sản phẩm khỏi danh sách
+            danhSachSanPham.splice(index, 1);
 
-            // Hiển thị lại danh sách khuyến mãi
-            hienThiDanhSachKhuyenMai();
+            // Hiển thị lại danh sách sản phẩm
+            hienThiDanhSachSanPham();
         }
     </script>
 </body>

@@ -13,6 +13,18 @@ let searchForm = document.querySelector('.search-form');
 document.querySelector('#timkiem').onclick = () => {
   searchForm.classList.toggle('active');
 };
+
+//------------------------------Link trang login vào icon user----------------
+
+        // Lấy thẻ có id là 'user-icon'
+        var userIcon = document.getElementById('user-icon');
+
+        // Thêm sự kiện click
+        userIcon.addEventListener('click', function() {
+            // Chuyển hướng người dùng đến trang đăng nhập khách hàng
+            window.location.href = 'Khach hang login.html'; 
+        });
+
     
  //------------------------------------SLIDE TRANG CHỦ -------------------    
     var swiper = new Swiper(".trangchu-slider", {

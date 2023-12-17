@@ -2238,4 +2238,205 @@ cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
 
 /*------------------------------*/
 
+/* CSS cho trang quản lý đơn hàng */
+.quanlydonhangtitle {
+    text-align: center;
+    color: #337153;
+}
+
+.quanlydonhang_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.quanlydonhang_tr, .quanlydonhang_th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.quanlydonhang_th {
+    background-color: #337153;
+    color: #fff;
+}
+
+#orderList {
+    font-size: 14px;
+}
+
+/* Optional: Style for different order statuses */
+.tinhTrangChuanBi {
+    color: #337153; /* Màu xanh lá cây */
+    font-weight: bold;
+}
+
+.tinhTrangDangGiao {
+    color: #e07c07; /* Màu cam đậm */
+    font-weight: bold;
+}
+
+.tinhTrangHoanThanh {
+    color: #2ecc71; /* Màu xanh lá cây nhạt */
+    font-weight: bold;
+}
+
+/*--------------------------------*/
+
+
+
+/* CSS cho trang quản lý sản phẩm */
+
+.quanlysptitle {
+    text-align: center;
+    color: #337153;
+}
+
+/* Định dạng form thêm sản phẩm */
+#productForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#productForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#productForm input,
+#productForm select,
+#productForm button {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#productForm button {
+    background-color: #337153;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Định dạng bảng hiển thị sản phẩm */
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#productTable th,
+#productTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#productTable th {
+    background-color: #337153;
+    color: #fff;
+}
+
+#productList img {
+    width: 50px;
+    height: auto;
+}
+
+/* CSS cho nút hành động trong bảng */
+.admin1_product_action-buttons button {
+    background-color: #337153;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.action-admin1_product_action button:hover {
+    background-color: #c4ccc6;
+}
+/*------------------------------------------------------*/
+
+
+/* CSS cho trang quản lý khuyến mãi */
+
+.quanlykmtitle {
+    text-align: center;
+    color: #337153;
+}
+
+/* Định dạng form thêm khuyến mãi */
+#promotionForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#promotionForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#promotionForm input,
+#promotionForm select,
+#promotionForm button {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#promotionForm button {
+    background-color: #337153;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Định dạng bảng hiển thị khuyến mãi */
+#promotionTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#promotionTable th,
+#promotionTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#promotionTable th {
+    background-color: #337153;
+    color: #fff;
+}
+
+#promotionList img {
+    width: 50px;
+    height: auto;
+}
+
+/* CSS cho nút hành động trong bảng */
+.admin1_promotion_action-buttons button {
+    background-color: #337153;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.admin1_promotion_action button:hover {
+    background-color: #c4ccc6;
+}
+/*-----------------------------------------------*/
+
+
 

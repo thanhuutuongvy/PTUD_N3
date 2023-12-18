@@ -87,7 +87,7 @@ li{
 }
 .header .search-form{
   position:absolute; /*Đặt phần tử ở vị trí tuyệt đối trong phần header.*/
-  top:110%; right:-150%; /*: Đặt vị trí của phần tử theo khoảng cách từ phía trên và phải của phần header.*/
+  top:110%; right:-110%; /*: Đặt vị trí của phần tử theo khoảng cách từ phía trên và phải của phần header.*/
   width:300px;
   padding:10px;
   height:50px;

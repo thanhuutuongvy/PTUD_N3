@@ -9,6 +9,7 @@ menu.onclick = () =>{
   navbar.classList.toggle('active'); //để hiển thị hoặc ẩn menu điều hướng (navbar) khi trạng thái của trang web thay đổi.
 }
 //------------------------------------THANH TÌM KIẾM------------------- 
+
 let searchForm = document.querySelector('.search-form');
 document.querySelector('#timkiem').onclick = () => {
   searchForm.classList.toggle('active'); //để hiển thị hoặc ẩn ô tìm kiếm khi được click vào icon được gán id là timkiem.

@@ -118,6 +118,7 @@ if(buTton){
 
 
 //------------------------------------VoucherVoucher------------------- 
+  // hiển thị nội dung phần tửcos id= cacvoucher dưới dạng flexbox ( display ='flex')-----
 function showOverlay() {
   var cacvoucher = document.getElementById('cacvoucher');
   cacvoucher.style.display = 'flex'; // Hiển thị các voucher

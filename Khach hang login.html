@@ -132,14 +132,14 @@
  
   <script>
            document.getElementById('loginForm').onsubmit = function(event) {
-            event.preventDefault();
+            event.preventDefault(); <!--ngăn chặn biểu mẫu với id là 'loginForm' khỏi việc tự động gửi dữ liệu, có thể xử lý dữ liệu trước khi nó được gửi đi--!>
             
-            // Get user input
-            var username = document.getElementById('username').value;
+            // Get user input <!--gán giá trị input cho username và password--!>
+            var username = document.getElementById('username').value; 
             var password = document.getElementById('password').value;
 
             // Here you would typically check the credentials against a database
-            // đăng nhập khách hàng
+            // đăng nhập khách hàng <!-- gán điều kiện password và username, điều hướng trang nếu nhập đúng--!>
             if(username == 'khachhang' && password == 'khachhang123') {
                 // Redirect to a new page
                 window.location.href = 'Thong tin khach hang.html';

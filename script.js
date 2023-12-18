@@ -126,6 +126,30 @@ function showOverlay() {
   cacvoucher.style.display = 'flex'; // Hiển thị các voucher
 }
 
+//------------------------------------ĐĂNG NHẬP-------------------
+        document.getElementById('loginForm').onsubmit = function(event) {
+            event.preventDefault();
+            
+            // Get user input
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Here you would typically check the credentials against a database
+            // đăng nhập khách hàng
+            if(username == 'khachhang' && password == 'khachhang123') {
+                // Redirect to a new page
+                window.location.href = 'Thong tin khach hang.html';
+            } else {
+                alert("Please enter both username and password");
+            }
+            //đăng nhập admin
+            if(username == 'admin' && password == 'admin123') {
+                // Redirect to a new page
+                window.location.href = 'dbadmin1_1.html';
+            } else {
+                alert("Please enter both username and password");
+            }
+        };
 
 
 

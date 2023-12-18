@@ -56,10 +56,10 @@
     </table>
 
     <script>
-        let danhSachSanPham = [];
+        let danhSachSanPham = []; // Tạo mảng danhsachsanpham để chức các thông tin liên quan đến danh sách sản phẩm
 
         function themSanPham() {
-            // Lấy giá trị từ các input
+            // Lấy giá trị từ trường nhập liệu có id tương ứng khi người dùng nhập vàovào
             let tenSanPham = document.getElementById('productName').value;
             let maSanPham = document.getElementById('productCode').value;
             let boSuuTap = document.getElementById('productCollection').value;
@@ -67,7 +67,7 @@
             let gia = document.getElementById('productPrice').value;
             let hinhAnh = document.getElementById('productImage').files[0];
 
-            // Tạo đối tượng sản phẩm
+            // Tạo đối tượng sản phẩm để chứa các thông tin liên quan đến sản phẩm
             let sanPham = {
                 tenSanPham: tenSanPham,
                 maSanPham: maSanPham,
@@ -77,13 +77,13 @@
                 hinhAnh: hinhAnh,
             };
 
-            // Thêm sản phẩm vào danh sách
+            // Thêm đối tượng sanpham vào mảng danhsachsanpham
             danhSachSanPham.push(sanPham);
 
-            // Hiển thị lại danh sách sản phẩm
+            // Hiển thị lại danh sách sản phẩm 
             hienThiDanhSachSanPham();
         
-            // Xóa dữ liệu trong form
+            // Xóa dữ liệu trong form bằng cách gán giá trị rỗng cho các biến
             document.getElementById('productName').value = '';
             document.getElementById('productCode').value = '';
             document.getElementById('productCollection').value = 'muaXuan'; // Reset giá trị mặc định
@@ -91,12 +91,12 @@
             document.getElementById('productPrice').value = '';
             document.getElementById('productImage').value = '';
         }
-
+// gọi lại hàm để hiển thị lại dnah sách sản phẩm sau khi xóa
         function hienThiDanhSachSanPham() {
             let productList = document.getElementById('productList');
             productList.innerHTML = '';
 
-            // Hiển thị danh sách sản phẩm
+            // Hiển thị danh sách sản phẩm, tạo row và cell để thêm ô vào hàng và đặt giá tị tương ứng với ô dựa trên thông tin sản phẩm
             danhSachSanPham.forEach(function (sanPham, index) {
                 let row = productList.insertRow();
                 let cell1 = row.insertCell(0);
@@ -113,28 +113,28 @@
                 cell4.textContent = sanPham.soLuong;
                 cell5.textContent = sanPham.gia;
 
-                // Hiển thị hình ảnh
-                let img = document.createElement('img');
-                img.src = URL.createObjectURL(sanPham.hinhAnh);
-                img.alt = sanPham.tenSanPham;
-                img.width = 50;
-                cell6.appendChild(img);
+                // Tạo phần tử <img> để hiển thị hình ảnh sản phẩm
+                let img = document.createElement('img'); // Tạo phần tử hình ảnh mới
+                img.src = URL.createObjectURL(sanPham.hinhAnh); // thiết lập đường dẫn tạm thời của hình ảnh từ file API, giúp hiển thị ảnh được chọn từ input file
+                img.alt = sanPham.tenSanPham; //Đặt thuộc tính alt của hình ảnh là tên sản phẩm
+                img.width = 50; // đặt độ rộng cho ảnh là 50px
+                cell6.appendChild(img); // thêm phần tử hình ảnh vào thông tin sản phẩm
                 cell7.innerHTML = '<button onclick="xoaSanPham(' + index + ')">Xóa</button>' +
-                                  '<button onclick="chinhSuaSanPham(' + index + ')">Chỉnh sửa</button>';
+                                  '<button onclick="chinhSuaSanPham(' + index + ')">Chỉnh sửa</button>';// Tạo nút xóa và chỉnh sửa tương ứng với hàm xóa và chỉnh sửa sản phẩm
                 cell7.className = 'admin1_product_action-buttons';
             });
         }
 
         function xoaSanPham(index) {
-            // Xóa sản phẩm khỏi danh sách
-            danhSachSanPham.splice(index, 1);
+            // Xóa phẩn tử từ mảng dánhachsanpham
+            danhSachSanPham.splice(index, 1); // splice dùng để gọi đúng phần tử có tham số là index và 1 để xóa đúng phần tử đó tỏng mảng
 
             // Hiển thị lại danh sách sản phẩm
             hienThiDanhSachSanPham();
         }
 
         function chinhSuaSanPham(index) {
-            // Lấy thông tin sản phẩm từ danh sách
+            // Lấy thông tin sản phẩm được gán tham số index từ danh sách
             let sanPham = danhSachSanPham[index];
 
             // Đổ dữ liệu vào form chỉnh sửa

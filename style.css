@@ -699,13 +699,14 @@ padding-top:10px;
 
 /*Trang cửa hàng  */
 
+/*Trang cửa hàng  */
 
-.cartegory {width: 1200px; margin: auto;}
+
+.cartegory {width: 1200px; margin: auto;display: flex}
 .trai {width: 20%;}
-.phai {width: 100%;}
-.trai .phai {box-sizing: border-box;
+.phai {width: 80%;}
+.trai .phai {
     display: flex;
-    align-items: center;
     justify-content:space-around;}
 #tongdanhmuc>.cap  { 
     background: rgb(160, 202, 150); padding: 8px 10px;
@@ -720,12 +721,10 @@ padding-top:10px;
 }
 #tongdanhmuc > .danhmuc input { width: 16px; height: 16px; margin-right: 10px;}
 
-
-
 /*sp*/
-.sanpham{ /*định dạng danh sách không có thứ tự có class "sanpham". loại bỏ kiểu danh sách mặc định, làm cho các mục danh sách hiển thị dưới dạng các phần tử flex và sắp xếp chúng thành một hàng với khoảng cách giữa các phần tử.*/
+.sanpham{ 
     display: flex; /*căn chỉnh và xếp chồng các phần tử con bên trong.*/
-    flex-wrap: wrap;/*Xếp chồng các phần tử con thành nhiều hàng khi không đủ không gian ngang để chứa tất cả các phần tử trên cùng một hàng.*/
+    
     justify-content:center;
     list-style-type: none;
   }
@@ -735,6 +734,13 @@ padding-top:10px;
     margin-bottom: 1.5em;
 
 }
+.sapxep .noidungdanhmuc {
+  box-sizing: border-box;
+  padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sapxep {display: block;}
 .sanpham-item:hover {/*định dạng các phần tử có class "sanpham-item" khi được hover. Nó thay đổi viền thành 1 pixel solid #4cf799 và đặt màu nền là #ecffe7.*/
     border: 1px solid #526d5e;
     background: #ecffe7;
@@ -839,7 +845,7 @@ ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
     text-transform: uppercase;
     font-weight: bold;
 }
-.sapxep{width: 100%;}
+.sapxep{display: block;}
 .sapxepsp {
     display: flex;
     flex: 1;
@@ -851,26 +857,32 @@ ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
     font-size: 12px;
 }
 .sapxepsp button {
-    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-    background-color: #ffff;
-    border: 1px solid #dddddd;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: hwb(120 89% 8%);
+    border: 1px solid #139246;
     margin: 10px;
 }
+.btn-sapxep{
+  text-align: center;
+  font-weight: bold;
+}
 .btn-sapxep:hover{
-    background-color: #368624;
+    background-color: #8cb184;
 }
 
 
 .sapxepsp  select {
-    padding: 10px 15px;
+    padding: 15px 15px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    background-color: #ffff;
-    border: 1px solid #dddddd;
+    background-color: hwb(120 89% 8%);
+    border: 1px solid #39b047;
     margin: 10px;
 }
 

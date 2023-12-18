@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Thanh toán</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reponsitive.css">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section class="tiêu-đề">
+      <h1>Thanh toán </h1>
+    </section>
+    <div class="cacvoucher" id="cacvoucher">
+      <div class="noidung-voucher">
+        <h2>VOUCHER</h2>
+        <div class="xoa">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="voucher12">
+          <div class="voucher2">
+            <table class="voucher1">
+              <tr>
+                <td>
+                  <h4 id="ma">GIAM30K</h4>
+                  <p id="mota">Giảm 30k cho đơn 300k</p>
+                  <p id="thoigian">Thời gian: 4/12/2023 - 30/12/2023</p>
+                </td>
+                <td>
+                  <div class="nut-apdung" onclick="showOverlay()">Áp dụng</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="voucher2">
+            <table class="voucher1">
+              <tr>
+                <td>
+                  <h4 id="ma">GIAM50K</h4>
+                  <p id="mota">Giảm 50k cho đơn 400k</p>
+                  <p id="thoigian">Thời gian: 4/12/2023 - 30/12/2023</p>
+                </td>
+                <td>
+                  <div class="nut-apdung" onclick="showOverlay()">Áp dụng</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="voucher34">
+          <div class="voucher2">
+            <table class="voucher1">
+              <tr>
+                <td>
+                  <h4 id="ma">KM20</h4>
+                  <p id="mota">Giảm 20% cho đơn từ 500k</p>
+                  <p id="thoigian">Thời gian: 4/12/2023 - 30/12/2023</p>
+                </td>
+                <td>
+                  <div class="nut-apdung" onclick="showOverlay()">Áp dụng</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="voucher2">
+            <table class="voucher1">
+              <tr>
+                <td>
+                  <h4 id="ma">GIANGSINH</h4>
+                  <p id="mota">Giảm 30% cho sản phẩm tách trà</p>
+                  <p id="thoigian">Thời gian: 4/12/2023 - 30/12/2023</p>
+                </td>
+                <td>
+                  <div class="nut-apdung" onclick="showOverlay()">Áp dụng</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="voucher56">
+          <div class="voucher2">
+            <table class="voucher1">
+              <tr>
+                <td>
+                  <h4 id="ma">GIAM100K</h4>
+                  <p id="mota">Giảm 100k cho đơn 1tr</p>
+                  <p id="thoigian">Thời gian: 4/12/2023 - 30/12/2023</p>
+                </td>
+                <td>
+                  <div class="nut-apdung" onclick="showOverlay()">Áp dụng</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="voucher2">
+            <table class="voucher1">
+              <tr>
+                <td>
+                  <h4 id="ma">HOT35</h4>
+                  <p id="mota">Giảm 35% cho đơn 500k</p>
+                  <p id="thoigian">Thời gian: 4/12/2023 - 30/12/2023</p>
+                </td>
+                <td>
+                  <div class="nut-apdung" onclick="showOverlay()">Áp dụng</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <section class="trangthanhtoan">
+      <!--THÔNG TIN THANH TOÁN + THÔNG TIN ĐƠN HÀNG-->
+      <div class="thanhtoan">
+        <!--THÔNG TIN THANH TOÁN-->
+        <div class="thongtinthanhtoan">
+          <h3>Thông tin thanh toán</h3>
+          <div class="form-thanhtoan">
+            <form id="form">
+              <div class="tên-họ">
+                <label for="ten">Tên</label>
+                <input type="text" id="ten" name="ten" required>
+                <label for="ho">Họ</label>
+                <input type="text" id="ho" name="ho" required>
+              </div>
+              <div class="tinhthanh-quanhuyen">
+                <label for="tinhthanh"> Tỉnh thành</label>
+                <select id="tinhthanh" name="tinhthanh">
+                  <option value="" disabled selected> Chọn </option>
+                  <option value="hanoi">Hà Nội</option>
+                  <option value="hochiminh">Hồ Chí Minh</option>
+                  <option value="danang">Đà Nẵng</option>
+                </select>
+                <label for="quanhuyen"> Quận huyện</label>
+                <select id="quanhuyen" name="quanhuyen">
+                  <option value="" disabled selected> Chọn </option>
+                  <option value="quan1">Quận 1</option>
+                  <option value="quan2">Quận 2</option>
+                  <option value="quan3">Quận 3</option>
+                </select>
+              </div>
+              <div class="diachi">
+                <label for="diachi">Địa chỉ</label>
+                <input type="text" id="diachi" name="diachi" required>
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="sdt">
+                <label for="sodienthoai">Số điện thoại</label>
+                <input type="text" id="sodienthoai" name="sodienthoai" required>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="giaohangdendiachikhac" value="giaohangdendiachikhac">Giao hàng đến địa chỉ khác ?
+              </div>
+              <div class="ghichu">
+                <label for="ghichu">Ghi chú</label>
+                <input type="text" id="ghichu" name="ghighu" required>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--THÔNG TIN ĐƠN HÀNG + VẬN CHUYỂN + THANH TOÁN-->
+        <div class="vanchuyen-thanhtoan">
+          <!--TIÊU ĐỀ-->
+          <div class="donhang">
+            <div class="phần-đầu-donhang">
+              <h3>Đơn hàng của bạn</h3>
+            </div>
+            <div class="tiêu-đề-donhang">
+              <h4>Sản phẩm</h4>
+              <h4>Tạm tính</h4>
+            </div>
+            <hr>
+            <div class="sanpham">
+              <div class="sp1">
+                <p>Bộ tách trà</p>
+                <p id="tongcong">87.000đ</p>
+              </div>
+              <div class="sp2">
+                <p>Bát men <span id="soluong">x2</span>
+                </p>
+                <p id="tongcong">190.000đ</p>
+              </div>
+              <div class="voucher" onclick="showOverlay()">
+                <div class="gift">
+                  <i class="fa-solid fa-gift"></i>
+                  <span class="text-voucher">Voucher</span>
+                </div>
+                <div class="next">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="vanchuyen">
+              <table class="bang-vanchuyen" width="630px">
+                <tr>
+                  <td rowspan="2">Vận chuyển</td>
+                  <th>
+                    <div class="loaivanchuyen">
+                      <form>
+                        <input name="loaivanchuyen" type="radio" value="ghtk" />Giao hàng tiết kiệm: <span id="tongcong">30.000đ</span>
+                    </div>
+                    <br>
+                    <div class="loaivanchuyen">
+                      <input name="loaivanchuyen" type="radio" value="ghtk" />Giao hàng hỏa tốc: <span id="tongcong">50.000đ</span>
+                      </form>
+                    </div>
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <hr>
+            <div class="chiphi">
+              <div class="tamtinh">
+                <p>Tạm tính</p>
+                <p id="tongcong">277.000đ</p>
+              </div>
+              <div class="giamgia">
+                <p>Giảm giá</p>
+                <p id="tongcong">0đ</p>
+              </div>
+              <div class="phivanchuyen">
+                <p>Phí vận chuyển</p>
+                <p id="tongcong">30.000đ</p>
+              </div>
+              <div class="tongcong">
+                <p>Tổng cộng</p>
+                <p id="tongcong">
+                  <span id="tongtien">307.000đ </span>
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div class="pttt-dathang">
+              <div class="phuongthucthanhtoan">
+                <h4>Phương thức thanh toán</h4>
+                <table class="form-phuongthucthanhtoan" width="500px">
+                  <tr>
+                    <th>
+                      <form>
+                        <input name="pttt" type="radio" value="cod" />Thanh toán khi nhận hàng
+                    </th>
+                    <td>
+                      <img src="./hinhanh/thanhtoan-cod.png" id="logo-thanhtoan">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <form>
+                        <input name="pttt" type="radio" value="ck" />Chuyển khoản ngân hàng
+                    </th>
+                    <td>
+                      <img src="./hinhanh/thanhtoanchuyenkhoan.png" id="logo-thanhtoan">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <form>
+                        <input name="pttt" type="radio" value="momo" />Thanh toán bằng Momo
+                    </th>
+                    <td>
+                      <img src="./hinhanh/thanhtoan-momo.png" id="logo-thanhtoan">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <form>
+                        <input name="pttt" type="radio" value="zalopay" />Thanh toán bằng ZaloPay
+                      </form>
+                    </th>
+                    <td>
+                      <img src="./hinhanh/thanhtoan-zalopay.png" id="logo-thanhtoan">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="nut">
+                <div class="quaylai">
+                  <div class="comeback">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <p>
+                      <a href="./giỏ hàng.html">Quay lại giỏ hàng </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="nut-dathang">
+                  <button class="dathang">Đặt hàng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="chinhanh">
+          <h3>Chi nhánh</h3>
+            <ul>
+              <li>Chi nhánh 1: 279 Nguyễn Tri Phương, phường 5, quận 10, TP. Hồ Chí Minh
+                <br> Điện thoại: (+84)987654321
+              </li><br>
+              <li>Chi nhánh 2: 59C Nguyễn Đình Chiểu, phường 6, quận 3, TP. Hồ Chí Minh
+                <br> Điện thoại: (+84)876954321
+              </li>
+            </ul>
+        </div>
+        <div class="thongtin">
+          <h3>Thông tin</h3>
+            <ul>
+              <li><a href="./trangchu.html">Trang chủ</a></li>
+              <li><a href="./cartegory.html">Cửa hàng</a></li>
+              <li><a href="./workshop.html">Workshop</a></li>
+              <li><a href="./Về chúng tôi.html">Về Y.Ceramic</a></li>
+              <li><a href="./chinhsach.html">Chính sách</a></li>
+            </ul>      
+        </div>
+        <div class="lienhe">
+          <h3>Liên hệ</h3>
+            <ul>
+              <li>Hotline:(+84)987654321</li>
+              <li>Email: theyceramic@gmail.com</li>
+            </ul>
+          </div>
+        <div class="social">
+          <h3>Theo dõi Y.Ceramic</h3>
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i>The Y.Ceramic</a></li>
+              <li><a href="#"><i class="fa-brands fa-tiktok"></i>Gốm nhà Y</a></li> 
+              <li><a href="#"><i class="fa-brands fa-instagram"></i>they.creamic</a></li>
+          </ul>
+      </div>    
+      <div class="dangky">
+          <form>
+            <h3>Đăng ký</h3>
+            <input type="email" name="email" placeholder="Nhập email" value="">
+            <button type="submit"><i class="fa-regular fa-paper-plane"></i></i></button>
+          <p> Đăng ký để nhận thông báo sớm nhất từ Y.Ceramic</p>
+      </div>
+      <div class="copyright">
+          <p>Copyright &copy; 2023 - Bản quyền thuộc về Y.Ceramic </p>
+      </div>  
+    </footer>
+    <!-- Liên kết tệp JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>

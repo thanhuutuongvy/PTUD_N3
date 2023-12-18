@@ -38,438 +38,354 @@
    
     <!-- -----------------------CARTEGPRY---------------------------------------------- -->
     <section class="cartegory">
-        <div class="container-cartegory">
-            <div class="cartegory-top row">
-                <p>Trang chủ</p> <span>&#8594;</span>
-                <p>Sản phẩm</p><span>&#8594;</span>
-                <p>Tất cả sản phẩm</p>
-            </div>
-        </div>
-        
-
-        <section>
-        <div class="containercartegory">
-            <div class="row">
-                <div class="cartegory-left row">
-                <div class="cartegory-left-row">
-                    <ul>
-                        <li class="cartegory-left-li"><a href="#">BỘ SƯU TẬP</a>
-                            <ul>
-                                <li><a href="cartegory.html">ĐÔNG</a></li>
-                                <li><a href="cartegory.html">HỮU</a></li>
-                                <li><a href="cartegory.html">LẶNG</a></li>
-                                <li><a href="cartegory.html">NGHỆ</a></li>
-                            </ul>
-
-                        </li>
-                        <li class="cartegory-left-li"><a href="#">SET</a>
-                            <ul>
-                                <li><a href="cartegory.html">SỨ TRẮNG</a></li>
-                                <li><a href="cartegory.html">BÀN TRÀ</a></li>
-                                <li><a href="cartegory.html">BÀN ĂN</a></li>
-                                <li><a href="cartegory.html">TRANG TRÍ</a></li>
-                            </ul>
-                        </li>
-                        <li class="cartegory-left-li"><a href="#">CỐC</a></li>
-                        <li class="cartegory-left-li"><a href="#">ĐĨA</a></li>
-                        <li class="cartegory-left-li"><a href="#">BÁT</a></li>
-                    </ul>
+        <section class="trai">
+            <div id="tongdanhmuc">
+                <div class="cap">BỘ SƯU TẬP</div>
+                <div class="danhmuc" > 
+                    <label><input type="checkbox" class="bst" value="Đông">Đông</label>
+                    <label><input type="checkbox" class="bst" value="Nghệ">Nghệ</label>
+                    <label><input type="checkbox" class="bst" value="Hữu">Hữu</label>
+                    <label><input type="checkbox" class="bst" value="Lặng">Lặng</label>
+                    <label><input type="checkbox" class="bst" value="Xuân">Xuân</label>
                 </div>
-            </div>
-                <div class="cartegory-right">
-                    <div class="cartegory-right-top-row">
-                        <div class="cartegory-right-top-item ">
-                            <p>SẢN PHẨM</p>
-                        </div>
-                    </div>
-                    <div class="cartegory-right-top-select">
-                    <div class="cartegory-right-top-item">
-                            <select name="" id="sapxep">
-                                <option value="">Sắp xếp: Mặc định</option>
-                                <option value="">Sắp xếp: Giá cao đến thấp</option>
-                                <option value="">Sắp xếp: Giá thấp đến cao</option>
-                                <option value="">Sắp xếp: Bán chạy</option>
-                                <option value="">Sắp xếp: Mới nhất</option>
-                            </select>
-                        </div>
-                    </div>
+                <div class="cap">DANH MỤC</div>
+                <div class="danhmuc"> 
+                    <label><input type="checkbox" class="dmsp" value="Cốc">Cốc</label>
+                    <label><input type="checkbox" class="dmsp" value="Bát">Bát</label>
+                    <label><input type="checkbox" class="dmsp" value="Đĩa">Đĩa</label>
+                    <label><input type="checkbox" class="dmsp" value="Set">Set</label>
+                    <label><input type="checkbox" class="dmsp" value="Tô">Tô</label>
+                </div>
+                <div class="cap">GIÁ BÁN</div>
+                <div class="danhmuc"> 
+                    <label><input type="checkbox" class="giaban" value="1">Dưới 100.000đ</label>
+                    <label><input type="checkbox" class="giaban" value="2">Từ 100.000đ đến 300.000đ</label>
+                    <label><input type="checkbox" class="giaban" value="3">Từ 300.000đ đến 500.000đ</label>
+                    <label><input type="checkbox" class="giaban" value="4">Trên 500.000đ</label>
+                </div>
+            </div>  
+        </section>
 
-                    <div class="cartegory-right-top-item">
-                        <select name="" id="hienthi">
-                            <option value="">Hiển thị: 4</option>
-                            <option value="">Hiển thị: 8</option>
-                            <option value="">Hiển thị: 12</option>
-                            <option value="">Hiển thị: 18</option>
-                            <option value="">Hiển thị: 20</option>
+        <section class="phai">
+            <section class="sapxep">
+                <div class="sapxepsp">
+                    <span class="sapxepsp-lable">Sắp xếp theo</span>
+                    <button class="btn-sapxep">Phổ biến</button>
+                    <button class="btn-sapxep">Mới nhất</button>
+                    <div class="sapxepmacdinh">
+                        <select name="" id="sapxepmacdinhgia">
+                            <option value="">Mặc định</option>
+                            <option value="">Giá cao đến thấp</option>
+                            <option value="">Giá thấp đến cao</option>
+                            <option value="">Bán chạy</option>
+                            <option value="">Hot Deal</option>
                         </select>
                     </div>
                 </div>
-                </div>
                 
-
-                </div>
-                    <div  class="cartegory-right-content row">
-                        <ul class="cartegory-right-content-item">
-                             <li>
-                                <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                    <div class="right-content-sanpham-top">
-                                        <a href="product.html" class="right-content-sanpham-thumb">
-                                            <img src="./ảnh sp/sp1 cốc men tiêu.jpg" alt="">
-                                        </a>
-                                        <a href="product.html" class="mua">Mua ngay</a>
-                                        <div class="right-content-sanpham-info">
-                                            <a href="" class="right-content-sanpham-danhmuc">Cốc</a>
-                                            <a href="" class="right-content-sanpham-name">Cốc men tiêu</a>
-                                            <div>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star"></span>
-                                            </div>
-                                            <div class="right-content-sanpham-gia">
-                                                <div class="original-price">132.000đ</div>    
+            </section>
+            <section class="noidungdanhmuc">
+                <div id="listsp1">
+                    <table>
+                        <tr>
+                            <td>
+                                <ul class="sanpham">
+                                    <li>
+                                        <div class="sanpham-item">
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="/images/P6.jpg" alt="">
+                                                </a>
+                                                <a href="./giỏ hàng.html" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">CỐC</a>
+                                                    <a href="./product.html" class="sanpham-name">Cốc gốm Jimcrea men mờ có hạt liti</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">
+                                                        <div class="original-price">169.000đ</div>
+                                                        <div class="discounted-price">118.000đ</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </li>
-                         </ul>
-
-                         <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Jimcrea Bộ bát đĩa gốm mờ (3).jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Đĩa</a>
-                                           <a href="" class="right-content-sanpham-name">Đĩa tròn</a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">95.000đ</div>
-                                               
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Đĩa Tiny Pepper .jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Đĩa</a>
-                                           <a href="" class="right-content-sanpham-name">Đĩa Tiny Pepper</a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">118.000đ</div>
-                                               <div class="discounted-price">169.000đ</div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Marine Plates Đĩa gốm sứ .jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Đĩa</a>
-                                           <a href="" class="right-content-sanpham-name">Marine Plates Đĩa gốm sứ </a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">125.000đ</div>
-                                               <div class="discounted-price">150.000đ</div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Cốc gốm Dot Mug.png" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Cốc</a>
-                                           <a href="" class="right-content-sanpham-name">Cốc gốm Dot Mug</a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">132.000đ</div>
-                                               
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Jimcrea Bộ bát đĩa gốm mờ.jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Set</a>
-                                           <a href="" class="right-content-sanpham-name">Jimcrea Bộ bát đĩa gốm mờ</a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">375.000đ</div>
-                                               <div class="discounted-price">488.000đ</div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Bộ chén đĩa gốm sứ MoonSet.jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Set</a>
-                                           <a href="" class="right-content-sanpham-name">Bộ chén đĩa gốm sứ MoonSet</a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">330.000đ</div>
-                                               <div class="discounted-price">429.000đ</div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Tô Pansy trắng .jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Tô</a>
-                                           <a href="" class="right-content-sanpham-name">Tô Pansy trắng </a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">125.000đ</div>
-                                            
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Đĩa gốm Sesam men mờ.jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Đĩa</a>
-                                           <a href="" class="right-content-sanpham-name">Dĩa gốm SESAM men mờ hạt tiêu liti</a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">185.000đ</div>
-                                               <div class="discounted-price">250.000đ</div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Bộ cốc gốm men tiêu màu trắng (3).jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Cốc</a>
-                                           <a href="" class="right-content-sanpham-name">Gốm men tiêu màu trắng</a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">125.000đ</div>
-                                               <div class="discounted-price">180.000đ</div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Đĩa gốm Sesam men mờ (2).jpg">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Set</a>
-                                           <a href="" class="right-content-sanpham-name">Dĩa gốm men mờ hạt tiêu </a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">150.000đ</div>
-                                               <div class="discounted-price">190.000đ</div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-                        <ul class="cartegory-right-content-item">
-                            <li>
-                               <div class="right-content-sanpham"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
-                                   <div class="right-content-sanpham-top">
-                                       <a href="product.html" class="right-content-sanpham-thumb">
-                                           <img src="./ảnh sp/Tô Pansy trắng  (2).jpg" alt="">
-                                       </a>
-                                       <a href="" class="mua">Mua ngay</a>
-                                       <div class="right-content-sanpham-info">
-                                           <a href="" class="right-content-sanpham-danhmuc">Tô</a>
-                                           <a href="" class="right-content-sanpham-name">Tô trắng</a>
-                                           <div>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star checked"></span>
-                                               <span class="fa fa-star"></span>
-                                               <span class="fa fa-star"></span>
-                                           </div>
-                                           <div class="right-content-sanpham-gia">
-                                               <div class="original-price">105.000đ</div>
-                                               <div class="discounted-price">140.000đ</div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </li>
-                        </ul>
-
-
-            
-                    </div>
-                    <a href="" class="btnxemthem" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10"> <!--data-wow-duration="1s": Thiết lập thuộc tính tùy chỉnh "data-wow-duration" Đây có thể là thuộc tính dùng để điều khiển hiệu ứng của thư viện "wow.js".-->
-                        <span>XEM THÊM</span>
-                    </a>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="images/P1.jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Đĩa</a>
+                                                    <a href="" class="sanpham-name">Dĩa gốm SESAM men mờ hạt tiêu liti</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">
+                                                        <div class="original-price">125.000đ</div>
+                                                        <div class="discounted-price">150.000đ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item">
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="images/P2.jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Đĩa</a>
+                                                    <a href="" class="sanpham-name">Marine Plates Dĩa gốm sứ tráng men</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">125.000 ₫</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/Cốc gốm Dot Mug.jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Cốc</a>
+                                                    <a href="" class="sanpham-name">Cốc gốm Dot Mug</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">
+                                                        <div class="original-price">150.000đ</div>
+                                                        <div class="discounted-price">125.000đ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item">
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/Bộ chén đĩa gốm sứ MoonSet.jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Set</a>
+                                                    <a href="" class="sanpham-name">Bộ chén đĩa gốm sứ MoonSet.jpg</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">335.000 ₫</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/Bộ cốc gốm men tiêu màu trắng (3).jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Set</a>
+                                                    <a href="" class="sanpham-name">Bộ cốc gốm men tiêu màu trắng</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">
+                                                        <div class="original-price">355.000đ</div>
+                                                        <div class="discounted-price">225.000đ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item">
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/Marine Plates Đĩa gốm sứ  (2).jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Đĩa</a>
+                                                    <a href="" class="sanpham-name">Marine Plates Dĩa gốm sứ </a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">115.000 ₫</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/sp1 cốc men tiêu (2).jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Cốc</a>
+                                                    <a href="" class="sanpham-name">cốc men tiêu</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">
+                                                        <div class="original-price">135.000đ</div>
+                                                        <div class="discounted-price">115.000đ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item">
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/Tô Pansy trắng .jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Tô</a>
+                                                    <a href="" class="sanpham-name">Tô Pansy trắng</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">125.000 ₫</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/Đĩa gốm Sesam men mờ (2).jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Đĩa</a>
+                                                    <a href="" class="sanpham-name">Dĩa gốm SESAM men mờ </a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">
+                                                        <div class="original-price">189.000đ</div>
+                                                        <div class="discounted-price">150.000đ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item">
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/Đĩa Tiny Pepper  (2).jpg" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Đĩa</a>
+                                                    <a href="" class="sanpham-name">Đĩa Tiny Pepper</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">125.000 ₫</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sanpham-item"> <!--Khung bọc toàn bộ nội dung của từng sản phẩm-->
+                                            <div class="sanpham-top">
+                                                <a href="./product.html" class="sanpham-thumb">
+                                                    <img src="./ảnh sp/Cốc gốm Dot Mug.png" alt="">
+                                                </a>
+                                                <a href="" class="mua">Mua ngay</a>
+                                                <div class="sanpham-info">
+                                                    <a href="" class="sanpham-danhmuc">Cốc</a>
+                                                    <a href="" class="sanpham-name">Cốc Moon</a>
+                                                    <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <div class="sanpham-gia">
+                                                        <div class="original-price">155.000đ</div>
+                                                        <div class="discounted-price">110.000đ</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <a href="" class="btnxemthem" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="10"> <!--data-wow-duration="1s": Thiết lập thuộc tính tùy chỉnh "data-wow-duration" Đây có thể là thuộc tính dùng để điều khiển hiệu ứng của thư viện "wow.js".-->
+            <span>XEM THÊM</span>
+        </a>
     </section>
 
     <!-- -------------------------Footer -->

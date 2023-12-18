@@ -87,7 +87,7 @@ li{
 }
 .header .search-form{
   position:absolute; /*Đặt phần tử ở vị trí tuyệt đối trong phần header.*/
-  top:110%; right:-150%; /*: Đặt vị trí của phần tử theo khoảng cách từ phía trên và phải của phần header.*/
+  top:110%; right:-110%; /*: Đặt vị trí của phần tử theo khoảng cách từ phía trên và phải của phần header.*/
   width:300px;
   padding:10px;
   height:50px;
@@ -698,12 +698,11 @@ padding-top:10px;
 /*Trang cửa hàng  */
 
 
-.cartegory { padding:30px; text-align: center;}
-.trai {width:fit-content;text-align:left;}
-.phai {width: 100%;}
-.trai .phai {box-sizing: border-box;
+.cartegory {width: 1200px; margin: auto;display: flex}
+.trai {width: 20%;}
+.phai {width: 80%;}
+.trai .phai {
     display: flex;
-    align-items: center;
     justify-content:space-around;}
 #tongdanhmuc>.cap  { 
     background: rgb(160, 202, 150); padding: 8px 10px;
@@ -718,12 +717,10 @@ padding-top:10px;
 }
 #tongdanhmuc > .danhmuc input { width: 16px; height: 16px; margin-right: 10px;}
 
-
-
 /*sp*/
-.sanpham{ /*định dạng danh sách không có thứ tự có class "sanpham". loại bỏ kiểu danh sách mặc định, làm cho các mục danh sách hiển thị dưới dạng các phần tử flex và sắp xếp chúng thành một hàng với khoảng cách giữa các phần tử.*/
+.sanpham{ 
     display: flex; /*căn chỉnh và xếp chồng các phần tử con bên trong.*/
-    flex-wrap: wrap;/*Xếp chồng các phần tử con thành nhiều hàng khi không đủ không gian ngang để chứa tất cả các phần tử trên cùng một hàng.*/
+    
     justify-content:center;
     list-style-type: none;
   }
@@ -733,6 +730,7 @@ padding-top:10px;
     margin-bottom: 1.5em;
 
 }
+
 .sanpham-item:hover {/*định dạng các phần tử có class "sanpham-item" khi được hover. Nó thay đổi viền thành 1 pixel solid #4cf799 và đặt màu nền là #ecffe7.*/
     border: 1px solid #526d5e;
     background: #ecffe7;
@@ -837,7 +835,7 @@ ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
     text-transform: uppercase;
     font-weight: bold;
 }
-.sapxep{width: 100%;}
+.sapxep{display: block;}
 .sapxepsp {
     display: flex;
     flex: 1;
@@ -849,26 +847,32 @@ ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
     font-size: 12px;
 }
 .sapxepsp button {
-    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-    background-color: #ffff;
-    border: 1px solid #dddddd;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: hwb(120 89% 8%);
+    border: 1px solid #139246;
     margin: 10px;
 }
+.btn-sapxep{
+  text-align: center;
+  font-weight: bold;
+}
 .btn-sapxep:hover{
-    background-color: #368624;
+    background-color: #8cb184;
 }
 
 
 .sapxepsp  select {
-    padding: 10px 15px;
+    padding: 15px 15px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    background-color: #ffff;
-    border: 1px solid #dddddd;
+    background-color: hwb(120 89% 8%);
+    border: 1px solid #39b047;
     margin: 10px;
 }
 
@@ -910,55 +914,6 @@ ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
 }
 
 /* ----------PRODUCT----------- */
-
-.row{
-        display: flex;
-        flex-wrap: wrap;
-}
-.cartegory-top {
-    margin-top: 30px;
-}
-.cartegory-top p {
-    font-family: var(--main-text-font);
-    margin: 0 12px;
-    font-size: 12px;
-    
-}
-.cartegory-left-li  {
-    list-style: none;
-}
-.cartegory-left {
-    width: 20%;
-    margin-top: 100px;
-    margin-bottom: 1px;
-}
-
-.cartegory-right {
-    width: 80%;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-.cartegory-right-top-select{
-    display:flex;
-}
-.cartegory-right-top-item:first-child {
-    flex: 2;
-    font-size: 16px;
-    font-family: var(--main-text-font);
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.cartegory-right-top-item select {
-    display: block;
-    width: 50%;
-    padding: 10px 15px;
-    cursor: pointer;
-    background-color: #ffff;
-    border: 1px solid #dddddd;
-}
-
-
-
 
 .row {
     display: flex;
@@ -1094,6 +1049,7 @@ ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
     display: block;
     margin: 20px 0 12px;
   }
+
   
   .product-content-right-product-button button:first-child {
     display: flex;
@@ -1135,6 +1091,7 @@ ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
   .product-content-right-product-QR {
     margin: 20px 0;
   }
+  /*---*/
   
   .product-content-right-bottom {
     padding-top: 40px;
@@ -1329,9 +1286,8 @@ ul.sanpham li .sanpham-info .sanpham-gia{/*Định dạng giá sp*/
   
   }
 
-  
 
-
+/*------------------------------*/
 /*------------------------------*/
 
 

@@ -132,15 +132,19 @@
  
   <script>
            document.getElementById('loginForm').onsubmit = function(event) {
+<<<<<<< HEAD
             event.preventDefault(); 
             //ngăn chặn biểu mẫu với id là 'loginForm' khỏi việc tự động gửi dữ liệu, có thể xử lý dữ liệu trước khi nó được gửi đi
+=======
+            event.preventDefault(); //ngăn chặn biểu mẫu với id là 'loginForm' khỏi việc tự động gửi dữ liệu, có thể xử lý dữ liệu trước khi nó được gửi đi
+>>>>>>> f35d22a8090eeba6e157dd9dd655e2bac36f3d0a
             
-            // Get user input <!--gán giá trị input cho username và password--!>
+            // Get user input gán giá trị input cho username và password
             var username = document.getElementById('username').value; 
             var password = document.getElementById('password').value;
 
             // Here you would typically check the credentials against a database
-            // đăng nhập khách hàng <!-- gán điều kiện password và username, điều hướng trang nếu nhập đúng--!>
+            // đăng nhập khách hàng gán điều kiện password và username, điều hướng trang nếu nhập đúng
             if(username == 'khachhang' && password == 'khachhang123') {
                 // Redirect to a new page
                 window.location.href = 'Thong tin khach hang.html';
@@ -154,8 +158,7 @@
             } else {
                 alert("Please enter both username and password");
             }
-        };
-
+        };     
   </script>
 </body>
 </html>

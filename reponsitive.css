@@ -1,3 +1,5 @@
+
+/*Khi chiều rộng màn hình tối đa là 991px*/
 @media (max-width:991px){
     html{
         font-size: 80%;
@@ -10,8 +12,12 @@
     }
     
 }
+
+/*Khi chiều rộng màn hình tối đa là 768px*/
 @media (max-width: 768px){
-    
+
+    /*phần Header*/
+
     .header .icon #menu{
         display:inline-block;
     }
@@ -38,11 +44,14 @@
         background: #C4CCC6;
     }
 
+    /*phần Footer*/ 
 
     footer .container{
         display:block;
         text-align: center;
     }
+    
+    /*Trang chủ*/ 
 
     .trangchu .trangchu-slider .noidung{
         padding: 5px;
@@ -66,8 +75,7 @@
     }
     
     
-   
-/*Trang về chúng tôi */
+    /*Trang về chúng tôi */
     .vechungtoi .chungtoi{
         display:block;
         text-align: center;
@@ -82,7 +90,8 @@
         display:block;
     }
 
-/*Trang về chính sách */
+    /*Trang về chính sách */
+
     .chinhsach{
         padding:0;
     }
@@ -103,8 +112,6 @@
     .chinhsach .chinhsachnho .noidung h3 {
         padding-bottom: 10px;
     }
-
-
 
     /*Trang workshop*/
       
@@ -167,8 +174,11 @@
 
 }
 
+/*Khi chiều rộng màn hình tối đa là 480px*/
+
 @media (max-width: 480px) {
-    .btn{/*định dạng nút*/
+    /*định dạng nút*/
+    .btn{
         color:#ffffff;
         font-size:80%;
         padding:5px;
@@ -177,7 +187,8 @@
         line-height: 30px;
       }
 
-      /*Header*/
+    /*Header*/
+
     .header .logo img {
         width:130px;
     }
@@ -186,9 +197,7 @@
         height:50px;
     }
 
-
     /*Trang chủ */
-
     .trangchu .trangchu-slider .noidung{
         padding: 5px;
         text-align: center;
@@ -206,6 +215,9 @@
         padding-top: 10px;
       }
   }
+
+
+  /*Khi chiều rộng màn hình tối đa là 320px*/
 
   @media (max-width: 320px){
     .header .logo {

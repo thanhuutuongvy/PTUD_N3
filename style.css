@@ -345,14 +345,14 @@ padding-top:10px;
 .workshop-trangchu {
   background-image: url(https://i.ytimg.com/vi/74DQq51XbZ8/maxresdefault.jpg);
   background-repeat: none;/*không lặp lại ảnh nền*/
-  background-position: center;
+  background-position: center; /*đăth hình nên ở giữa*/
   width:100%;
   height:fit-content;
   background-attachment: fixed; /*giữ ảnh nền cố định khi cuộn trang*/
 }
 .workshop-trangchu .workshop-nd {
   text-align: center;
-  line-height: 2.5;
+  line-height: 2.5; /*khoảng cách các phần tử bên trong*/
   color:#fff;
   padding: 50px;
   align-items: center;
@@ -361,7 +361,7 @@ padding-top:10px;
 
 .workshop-trangchu .sign-in-button {
   color:#020202;
-  text-decoration: none;
+  text-decoration: none; /*bỏ đường gạch chân*/
   font-weight: 700;
   font-style: italic;
   font-size: 20px;
@@ -388,16 +388,16 @@ padding-top:10px;
 }
 .danhgia .slide{
   padding: 32px;
-  box-shadow: #334862;
+  box-shadow: #334862; /*kiểu đổ bóng*/
   border: 2px solid rgba(0,0,0,.2);
   border-radius: 16px;
   background-color: #fff;
   height: 320px;
-  position:relative;
+  position:relative; /*kiểu định vị để đặt icon*/
 }
  
 .danhgia .slide .fa-quote-right{
-  position:absolute;
+  position:absolute; /*đặt vị trí cho icon*/
   top:10px;
   right:10px;
   font-size: 30px;
@@ -413,7 +413,7 @@ padding-top:10px;
   height:70px;
   width:70px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: cover; /*ảnh sẽ thay đổi kích thước sao cho nó "che phủ" toàn bộ phần tử, giữ nguyên tỷ lệ khía cạnh và cắt bớt nếu cần thiết*/
 }
 .danhgia .slide .khach .ngay{
   font-size: 10px;
@@ -472,12 +472,13 @@ padding-top:10px;
   height:100px;
   width:100px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: cover;/*ảnh sẽ thay đổi kích thước sao cho nó "che phủ" toàn bộ phần tử, giữ nguyên tỷ lệ khía cạnh và cắt bớt nếu cần thiết*/
 }
 
 
+
 .doingunhanvien .nhanvien img:hover{
-  transform: scale(1.2);
+  transform: scale(1.2); /*phóng to cho phần tử, làm tăng kích thước của nó lên 1.2 lần so với kích thước ban đầu*/
 }
 
 /*--------------------------------------------------------------*/
@@ -493,12 +494,12 @@ padding-top:10px;
   align-items: center;
 }
 .chinhsach .chinhsachnho img{
-  opacity: 0.4;
+  opacity: 0.4; /*đặt độ mờ của phần tử xuống còn 40% */
   width:400px;
 }
 .chinhsach .chinhsachnho .noidung{
   color:#794D32;
-  line-height: 30px;
+  line-height: 30px; /*khoảng cách của các phần tử bên trong */
 }
 .chinhsach .chinhsachnho .noidung h3 {
   padding-bottom: 40px;
@@ -510,11 +511,11 @@ padding-top:10px;
 
 .dieukien .noidung{
   margin:20px;
-  line-height: 30px;
+  line-height: 30px; /*khoảng cách của các phần tử bên trong */
   color:#666666;
 }
 .dieukien .noidung ul{
-  list-style-type: circle;
+  list-style-type: circle; /*kiểu đánh dấu sẽ là hình tròn*/
   padding:30px;
 }
 .dieukien .noidung h3{
@@ -541,14 +542,14 @@ padding-top:10px;
   display:flex;
   text-align: center;
   gap:30px;
-  align-items: center;
+  align-items: center; /*đặt các phần tử con vào giữa theo trục chính của container*/
 }
 .workshop .workshop-dau img{
-  opacity: 0.4;
+  opacity: 0.4; /*đặt độ mờ của phần tử xuống còn 40% */
 }
 .workshop .workshop-dau .noidung{
   color:#797979;
-  line-height: 30px;
+  line-height: 30px; /*khoảng cách của các phần tử bên trong */
 }
 .workshop .workshop-dau .noidung h3 {
   padding-bottom: 40px;
@@ -577,7 +578,7 @@ padding-top:10px;
 .gth-ws .noidung{
   padding:10px;
   color:#6F7E78;
-  line-height: 20px;
+  line-height: 20px; /*khoảng cách của các phần tử bên trong */
 }
 .gth-ws .khonggian img{
   width:300px;
@@ -597,7 +598,7 @@ padding-top:10px;
 .ws-slider .slide  img{
   height:200px;
   width:250px;
-  object-fit: cover;
+  object-fit: cover; /*ảnh sẽ thay đổi kích thước sao cho nó "che phủ" toàn bộ phần tử, giữ nguyên tỷ lệ khía cạnh và cắt bớt nếu cần thiết*/
   border-radius: 30px;
   align-items: center;
 }
@@ -611,7 +612,7 @@ padding-top:10px;
 }
 .trainghiem .wrapper {
   display:flex;
-  justify-content: space-around;
+  justify-content: space-around; /* Căn chỉnh các phần tử con vào giữa với khoảng cách đều */
   
 }
  .trainghiem {
@@ -634,7 +635,7 @@ padding-top:10px;
   height:70px;
   width:70px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: cover; /*ảnh sẽ thay đổi kích thước sao cho nó "che phủ" toàn bộ phần tử, giữ nguyên tỷ lệ khía cạnh và cắt bớt nếu cần thiết*/
 }
 .trainghiem .binhluan .khach .ngay{
   font-size: 10px;
@@ -670,9 +671,9 @@ padding-top:10px;
 }
 .lichhoatdong .hoatdong{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-around;  /* Căn chỉnh các phần tử con vào giữa với khoảng cách đều */
   gap:20px;
-  align-items: center;
+  align-items: center; /* Căn chỉnh các phần tử con theo trục chính vào giữa */
   padding-bottom: 30px;
 }
 .lichhoatdong .hoatdong .noidung{
@@ -690,10 +691,6 @@ padding-top:10px;
   border-collapse:collapse;
   margin: 0 auto;
 }
-
-
-
-
 
 /*------------------------------*/
 

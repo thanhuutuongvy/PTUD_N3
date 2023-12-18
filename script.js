@@ -81,13 +81,7 @@ document.querySelector('#timkiem').onclick = () => {
             },
         }
       });
-//-------------------------------------CARTEGORY-------------------
-const itemSlidebar = document.querySelectorAll(".cartegory-left-li")
-itemSlidebar.forEach(function(menu,index){
-    menu.addEventListener("click",function(){
-        menu.classList.toggle("block")
-    })
-}) // 
+
 //------------------------------------PRODUCT-------------------
 const bigImg = document.querySelector(".product-content-left-big-img img")
 const smallImg = document.querySelectorAll(".product-content-left-small-img img")

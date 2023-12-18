@@ -132,7 +132,8 @@
  
   <script>
            document.getElementById('loginForm').onsubmit = function(event) {
-            event.preventDefault(); <!--ngăn chặn biểu mẫu với id là 'loginForm' khỏi việc tự động gửi dữ liệu, có thể xử lý dữ liệu trước khi nó được gửi đi--!>
+            event.preventDefault(); 
+            //ngăn chặn biểu mẫu với id là 'loginForm' khỏi việc tự động gửi dữ liệu, có thể xử lý dữ liệu trước khi nó được gửi đi
             
             // Get user input <!--gán giá trị input cho username và password--!>
             var username = document.getElementById('username').value; 
@@ -156,7 +157,5 @@
         };
 
   </script>
-  <script src="./script.js"></script>
-
 </body>
 </html>

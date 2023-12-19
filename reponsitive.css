@@ -217,6 +217,12 @@
         font-size: 90%;
         padding-top: 10px;
       }
+      .sanphambanchay{
+        display:block;
+      }
+      
+      .sanphambanchay .spbc .sanpham{
+        display:block;
   }
 
 

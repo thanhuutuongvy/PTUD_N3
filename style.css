@@ -267,15 +267,24 @@ padding-top:10px;
 
 .sanphambanchay{
   background-color: #b7c2b469;
-  display: flex;
+  display:grid;
+  grid-template-rows: 10% 90%;
   justify-content:center;
   align-items: center;
+  padding:40px;
 }
 .sanphambanchay h2{
   color:#337153;
-  padding:20px;
+  padding:30px;
   text-align: center;
   font-size: 30px;
+}
+
+.sanphambanchay .spbc .sanpham{
+  display:grid;
+  align-items: center;
+  gap:20px;
+  grid-template-columns: 50% 50%;
 }
 /* mã giảm giá nằm trên góc phải màn hình*/
 .sanpham-thumb {

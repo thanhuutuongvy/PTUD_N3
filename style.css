@@ -277,6 +277,30 @@ padding-top:10px;
   text-align: center;
   font-size: 30px;
 }
+/* mã giảm giá nằm trên góc phải màn hình*/
+.sanpham-thumb {
+  position: relative;
+  display: inline-block;
+}
+
+.sanpham-thumb img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bo tròn góc của ảnh */
+}
+
+.discount-percent {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #d07368; /* Màu đỏ hoặc màu khác tùy chọn */
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  border-top-left-radius: 3px; /* Bo góc trái trên */
+  border-bottom-right-radius: 3px; /* Bo góc phải dưới */
+  z-index: 1; /* Đảm bảo nằm trên ảnh */
+}
 
 
 /*-----------Về chúng tôi---------------*/

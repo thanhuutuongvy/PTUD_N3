@@ -198,6 +198,9 @@
     }
 
     /*Trang chủ */
+    .trangchu{
+        padding:50px;
+    }
     .trangchu .trangchu-slider .noidung{
         padding: 5px;
         text-align: center;
